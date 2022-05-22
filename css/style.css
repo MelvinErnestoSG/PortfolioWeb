@@ -100,7 +100,6 @@ nav ul li {
   background: var(--secound-color);
   padding: 12px 30px;
   border-radius: 30px;
-  box-shadow: 0px 0px 6px #000, 0px, 0px, 14px, #868686;
   cursor: pointer;
   top: 6px;
   right: 6px;
