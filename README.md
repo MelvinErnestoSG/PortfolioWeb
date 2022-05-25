@@ -1,2 +1,3 @@
-# HTMLAndCSSLayout
- Maquita hecha en HTML y CSS.
+# PortfolioWeb
+ Está hecho en HTML con CSS y JavaScript.
+ It is made in HTML with CSS and JavaScript.
