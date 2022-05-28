@@ -314,7 +314,6 @@ header.sticky{
 	bottom: 52%;
 	opacity: 1;
 }
-
 .layer h5{
 	position: absolute;
 	width: 100%;
@@ -331,7 +330,6 @@ header.sticky{
 	bottom: 48%;
 	opacity: 1;
 }
-
 .service-content{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, auto));
