@@ -14,7 +14,7 @@
 	--color-secundary: #ffffff;
 	--color-text: #000;
 	--color-p: #a09dab;
-	--color-social: rgb(3, 0, 13);
+	--color-social: rgb(3, 0, 10);
 	--color-contact: #8067f0eb;
 	--color-grey-2: #b2becd;
 	--color-grey-5: #4f5258;
@@ -28,7 +28,7 @@
 	display: grid;
 	gap: 1em;
 	grid-template-rows: 40rem;
-	grid-template-columns: repeat(auto-fill, minmax(60rem, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(55rem, 1fr));
 }
 /*************************************************/
 /*Cuerpo = Body*/
@@ -48,6 +48,7 @@ body::-webkit-scrollbar-thumb{
 a {
 	display: inline-block;
 	color: inherit;
+    font-family: inherit;
 }
 /*************************************************/
 /*Cabeza = Header*/
@@ -221,7 +222,7 @@ span{
 	transition: .5s;
 }
 
-/*inicio  = Home*/
+/*inicio = Home*/
 .home-img img{
 	max-width: 100%;
 	width: 540px;
@@ -524,6 +525,9 @@ header.sticky{
 }
 /*************************************************/
 /*Trabajos = work*/
+.cta{
+	transition: all .40s;
+}
 .cta-box{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(220px, auto));
@@ -544,18 +548,28 @@ header.sticky{
 	background: #baebcd;
 	will-change: transform;
 	transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
+}
+.one:hover{
+	transform: scale(1.1);
 	cursor: pointer;
 }
 .two{
 	background: #D9D1FA;
 	will-change: transform;
 	transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
+}
+.two:hover{
+	transform: scale(1.1);
 	cursor: pointer;
 }
 .three{
 	background: #faedce;
 	will-change: transform;
 	transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
+	cursor: pointer;
+}
+.three:hover{
+	transform: scale(1.1);
 	cursor: pointer;
 }
 .wrap h3{
