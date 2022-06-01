@@ -409,6 +409,25 @@ header.sticky{
 	transition: ease .45s;
 	cursor: pointer;
 }
+.row i{
+	color: var(--primary-color);
+	margin-bottom: 20px;
+	font-size: 2.7rem;
+}
+.row h3{
+	color: var(--text-color);
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+.row p{
+	color: var(--secound-color);
+	line-height: 30px;
+	font-size: var(--p-font);
+}
+.row:hover{
+	transform: translateY(-8px);
+}
 .service img{
 	height: 65px;
 	width: 65px;
