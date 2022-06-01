@@ -617,6 +617,7 @@ input::placeholder{
 	border-radius: 30px;
 	cursor: pointer;
 	transition: ease .50s;
+	text-transform: uppercase;
 }
 .contact .action form input[type="submit"]:hover {
 	transform: scale(1.1);
