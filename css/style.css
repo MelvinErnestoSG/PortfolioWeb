@@ -542,12 +542,21 @@ header.sticky{
 }
 .one{
 	background: #baebcd;
+	will-change: transform;
+	transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
+	cursor: pointer;
 }
 .two{
 	background: #D9D1FA;
+	will-change: transform;
+	transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
+	cursor: pointer;
 }
 .three{
 	background: #faedce;
+	will-change: transform;
+	transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
+	cursor: pointer;
 }
 .wrap h3{
 	font-size: 24px;
@@ -557,6 +566,8 @@ header.sticky{
 .wrap p{
 	font-size: var(--p-font);
 }
+/*************************************************/
+/*Contactos = Contact*/
 .contact{
 	background: var(--color-contact);
 	width: 64%;
