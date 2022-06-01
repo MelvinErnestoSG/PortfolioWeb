@@ -7,6 +7,8 @@
 	text-decoration: none;
 	scroll-behavior: smooth;
 }
+/*************************************************/
+/*Variables*/
 :root{
 	--color-primary: #f75023;
 	--color-secundary: #ffffff;
@@ -20,6 +22,16 @@
 	--h2-font: 3rem;
 	--p-font: 1.1rem;
 }
+/*************************************************/
+/*Contenedor para mi @MediaQueris*/
+.container-flex-media{
+	display: grid;
+	gap: 1em;
+	grid-template-rows: 40rem;
+	grid-template-columns: repeat(auto-fill, minmax(60rem, 1fr));
+}
+/*************************************************/
+/*Cuerpo = Body*/
 body{
 	background: var(--color-secondary);
 	color: var(--color-text);
@@ -37,6 +49,8 @@ a {
 	display: inline-block;
 	color: inherit;
 }
+/*************************************************/
+/*Cabeza = Header*/
 header{
 	position: fixed;
 	width: 100%;
@@ -52,14 +66,18 @@ header{
 }
 header i{
 	position: absolute;
+	color:var(--color-primary);
 	padding: 12px 5%;
+	cursor: pointer;
 }
+/*************************************************/
+/*Imagen de logo = logo image*/
 .logo img{
 	max-width: 100%;
 	width: 130px;
 	height: auto;
 }
-
+/*************************************************/
 /*Barra de navegación*/
 .navbar{
 	display: flex;
@@ -72,6 +90,9 @@ header i{
 	color: var(--color-text);
 	font-weight: 500;
 	padding: 10px 27px;
+}
+.navbar a:hover{
+	color: var(--color-primary);
 }
 .navbar a::after{
 	content: '';
@@ -86,18 +107,9 @@ header i{
 .navbar a:hover::after{
 	width: 80%;
 }
-
-/*Menu*/
-#menu-icon{
-	font-size: 35px;
-	color: var(--color-text);
-	z-index: 10001;
-	cursor: pointer;
-	display: none;
-}
-
-/*Boton de abajo*/
-.button-top{
+/*************************************************/
+/*Boton*/
+.button{
 	display: inline-block;
 	padding: 9px 30px;
 	background: transparent;
@@ -109,18 +121,18 @@ header i{
 	font-weight: 500;
 	transition: ease .50s;
 }
-.button-top:hover{
+.button:hover{
 	transform: scale(1.1);
 	background: var(--color-primary);
 	border: 2px solid var(--color-primary);
 	color: var(--color-secondary);
 }
-
+/*************************************************/
 /*Sección*/
 section{
 	padding: 100px 18%;
 }
-
+/*************************************************/
 /*Inicio*/
 .home{
 	min-height: 100vh;
@@ -160,7 +172,35 @@ span{
 	line-height: 28px;
 	margin-bottom: 20px;
 }
-
+/*************************************************/
+/*boletín*/
+.newslatter form{
+	width: 380px;
+	max-width: 100%;
+	position: relative;
+}
+.newslatter form input:first-child{
+	display: inline-block;
+	width: 100%;
+	outline: none;
+	padding: 16px 140px 16px 15px;
+	border: 2px solid var(--color-primary);
+	border-radius: 30px;
+}
+.newslatter form input:last-child{
+	position: absolute;
+	display: inline-block;
+	outline: none;
+	border: none;
+	background: var(--color-primary);
+	padding: 12px 30px;
+	border-radius: 30px;
+	box-shadow: 0px 0px 6px #000, 0px, 0px, 14px, #868686;
+	cursor: pointer;
+	top: 6px;
+	right: 6px;
+}
+/*************************************************/
 /*Social*/
 .social a{
 	width: 35px;
@@ -181,23 +221,7 @@ span{
 	transition: .5s;
 }
 
-/*Boton*/
-.button-home{
-	display: inline-block;
-	color: var(--color-secondary);
-	background: var(--color-primary);
-	font-size: var(--p-font);
-	padding: 10px 40px;
-	font-weight: 500;
-	line-height: 24px;
-	border-radius: 30px;
-	transition: ease .40s;
-}
-.button-home:hover{
-	transform: scale(1.1);
-}
-
-/*inicio*/
+/*inicio  = Home*/
 .home-img img{
 	max-width: 100%;
 	width: 540px;
@@ -208,8 +232,8 @@ header.sticky{
 	padding: 13px 18%;
 	box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
 }
-
-/*Item*/
+/*************************************************/
+/*Items = Artículos*/
 .items{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(220px, auto));
@@ -245,8 +269,8 @@ header.sticky{
 	will-change: transform;
 	transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
 }
-
-/*Acerca*/
+/*************************************************/
+/*Acerca = About*/
 .about{
 	display: grid;
 	grid-template-columns: repeat(2, 2fr);
@@ -257,6 +281,9 @@ header.sticky{
 	max-width: 100%;
 	width: 540px;
 	height: auto;
+}
+.about-text .items{
+	display: grid;
 }
 .about-text h2{
 	font-size: var(--h2-font);
@@ -276,8 +303,8 @@ header.sticky{
 	line-height: 28px;
 	margin-bottom: 45px;
 }
-
-/*cabecera*/
+/*************************************************/
+/*clase para titulos cabecera = Heading*/
 .heading{
 	text-align: center;
 }
@@ -297,8 +324,8 @@ header.sticky{
 	color: var(--color-p);
 	line-height: 28px;
 }
-
-/*contenido portafolio*/
+/*************************************************/
+/*Contenido Portafolio = Portfolio Content*/
 .portfolio-content{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(350px, auto));
@@ -318,8 +345,8 @@ header.sticky{
 	object-fit: cover;
 	border-radius: 12px;
 }
-
-/*Capa*/
+/*************************************************/
+/*Capa = Layer*/
 .layer{
 	background: transparent;
 	height: 100%;
@@ -365,8 +392,8 @@ header.sticky{
 	bottom: 48%;
 	opacity: 1;
 }
-
-/*Servicio*/
+/*************************************************/
+/*Servicio = Service*/
 .service-content{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, auto));
@@ -418,7 +445,7 @@ header.sticky{
 	will-change: transform;
 	transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
 }
-
+/*************************************************/
 /*Blogs*/
 .blogs {
 	display: grid;
@@ -476,8 +503,8 @@ header.sticky{
 	padding-bottom: 1rem;
 	transition: all .40s;
 }
-
-/*Trabajos*/
+/*************************************************/
+/*Trabajos = work*/
 .cta-box{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(220px, auto));
@@ -536,6 +563,8 @@ header.sticky{
 	line-height: 26px;
 	margin-bottom: 25px;
 }
+/*************************************************/
+/*Contacto = contact*/
 input::placeholder{
 	color: var(--color-text);
 }
@@ -552,14 +581,23 @@ input::placeholder{
 }
 .contact .action form input[type="submit"] {
 	padding: 12px 40px;
-	background: var(--color-primary);
-	color: var(--color-secundary);
-	border: none;
-	outline: none;
+	background: transparent;
+	border: 2px solid var(--color-primary);
 	margin: 0 10px 20px 0;
 	border-radius: 30px;
 	cursor: pointer;
+	transition: ease .50s;
 }
+.contact .action form input[type="submit"]:hover {
+	transform: scale(1.1);
+	background: var(--color-primary);
+	border: 2px solid var(--color-primary);
+	color: var(--color-secondary);
+	cursor: pointer;
+	transition: ease .50s;
+}
+/*************************************************/
+/*Pie de pagina = Footer*/
 .ends{
 	text-align: center;
 	padding: 40px;
@@ -568,7 +606,8 @@ input::placeholder{
 	font-size: var(--p-font);
 	letter-spacing: 1px;
 }
-@media (max-width: 1425px){
+/*************************************************/
+/*@media (max-width: 1425px){
 	header{
 		padding: 16px 3%;
 		transition: .3s;
@@ -665,4 +704,4 @@ input::placeholder{
 	.contact .action form input[type="email"] {
 		width: 310px;
 	}
-}
+}*/
