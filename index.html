@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Personal Portfolio Website 2022</title>
+	<title>Portfolio Website 2022</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -16,7 +16,9 @@
 	<container class="container-flex-media">
 		<!--------header-------->
 		<header>
-			<a href="#" class="logo"><img src="img/logo.png"></a>
+			<!--<a href="#" class="logo"><img src="img/logo.png"></a>-->
+			<h2 class="logo">Portfo<span>lio</span></h2>
+			<div class="bx bx-menu" id="menu-icon"></div>
 			<ul class="navbar">
 				<li><i class="fas fa-home"></i><a href="#home">Home</a></li>
 				<li><i class="fas fa-user"></i><a href="#about">About</a></li>
@@ -32,7 +34,7 @@
 		<section class="home" id="home">
 			<div class="home-text">
 				<h3>Hello, I'm</h3>
-				<h1>James Smith</h1>
+				<h1>James <span>Smith</span></h1>
 				<h5>A Creative Designer <span>From New York</span></h5>
 				<p>I'm creative designer based in New York, and I'm very passionate and dedicated to my work.</p>
 				<div class="social">
@@ -41,7 +43,6 @@
 					<a href="#"><i class='bx bxl-linkedin'></i></a>
 					<a href="#"><i class='bx bxl-behance'></i></a>
 				</div>
-				<!--<a href="#" class="button">About Me</a>-->
 				<div class="newslatter">
 					<form>
 						<input type="email" name="email" id="mail" placeholder="Enter Your Email">
@@ -76,13 +77,13 @@
 
 		<!--------portfolio-------->
 		<section class="portfolio" id="portfolio">
-			<heading class="heading">
+			<div class="heading">
 				<h3>Portfolio</h3>
 				<h2>My Amazing Work</h2>
 				<p>Most common methods for designing websites that work well on desktop is <br> responsive and adaptive design</p>
-			</heading>
+			</div>
 
-			<container class="portfolio-content">
+			<div class="portfolio-content">
 				<div class="col">
 					<img src="img/work1.jpg">
 					<div class="layer">
@@ -130,16 +131,16 @@
 						<h5>Popup</h5>
 					</div>
 				</div>
-			</container>
+			</div>
 		</section>
 
 		<!--------service-------->
 		<section class="service" id="service">
-			<heading class="heading">
+			<div class="heading">
 				<h3>Service</h3>
 				<h2>What I Do For Clients</h2>
 				<p>Most common methods for designing websites that work well on desktop is <br> responsive and adaptive design</p>
-			</heading>
+			</div>
 
 			<div class="service-content">
 				<div class="row">
@@ -183,7 +184,7 @@
 		<!--------sub service-------->
 		<section class="sub-service">
 			<heading class="heading">
-				<h2>Other Services</h2>
+				<h2>Other <span>Services</span></h2>
 			</heading>
 			<div class="items">
 				<div class="sub-box">
@@ -214,9 +215,9 @@
 
 		<!--------work-------->
 		<section class="cta">
-			<heading class="heading">
+			<div class="heading">
 				<h2>Completed 1200+ Projects <br> Successfully</h2>
-			</heading>
+			</div>
 
 			<div class="cta-box">
 				<div class="wrap one"><i class="far fa-user"></i>
@@ -238,10 +239,10 @@
 
 		<!--------Blogs-------->
 		<section class="cta" id="blogs">
-			<heading class="heading">
+			<div class="heading">
 				<h3>My</h3> 
 				<h2>Blogs</h2>
-			</heading>
+			</div>
 			<div class="blogs">
 				<div class="blog">
 					<img src="img/port6.jpg" alt="">
@@ -319,20 +320,23 @@
 		</section>
 
 		<!--------contact-------->
-		<section class="contact" id="contact">
-			<container class="container">
-				<content class="center">
+		<div class="contact" id="contact">
+			<div class="cta">
+				<div class="heading">
+					<h2>Contact me</h2> 
+				</div>
+				<div class="center">
 					<h3>Let's talk about everything</h3>
 					<p>Don't like forms? Send me an email.</p>
-				</content>
-				<content class="action">
+				</div>
+				<div class="action">
 					<form>
 						<input type="email" name="email" placeholder="Enter Your email" required>
 						<input type="submit" name="submit" value="Submit">
 					</form>
-				</content>
-			</container>
-		</section>
+				</div>
+			</div>
+		</div>
 
 		<!--------ends-------->
 		<footer class="ends">

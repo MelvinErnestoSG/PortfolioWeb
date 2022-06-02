@@ -3,14 +3,12 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: 'Jost', sans-serif;
-	list-style: none;
-	text-decoration: none;
 	scroll-behavior: smooth;
 }
 /*************************************************/
 /*Variables*/
 :root{
-	--color-primary: #f75023;
+	--color-primary: #27AE60;
 	--color-secundary: #ffffff;
 	--color-text: #000;
 	--color-p: #a09dab;
@@ -47,8 +45,7 @@ body::-webkit-scrollbar-thumb{
 }
 a {
 	display: inline-block;
-	color: inherit;
-    font-family: inherit;
+	list-style: none;
 }
 /*************************************************/
 /*Cabeza = Header*/
@@ -82,6 +79,7 @@ header i{
 /*Barra de navegación*/
 .navbar{
 	display: flex;
+	list-style: none;
 }
 .navbar li{
 	position: relative;
@@ -89,6 +87,7 @@ header i{
 .navbar a{
 	font-size: var(--p-font);
 	color: var(--color-text);
+	text-decoration: none;
 	font-weight: 500;
 	padding: 10px 27px;
 }
@@ -108,10 +107,18 @@ header i{
 .navbar a:hover::after{
 	width: 80%;
 }
+#menu-icon{
+	font-size: 30px;
+	color: var(--text-color);
+	z-index: 1001;
+	cursor: pointer;
+	/*display: none;*/
+}
 /*************************************************/
 /*Boton*/
 .button{
 	display: inline-block;
+	text-decoration: none;
 	padding: 9px 30px;
 	background: transparent;
 	border: 2px solid var(--color-primary);
@@ -208,6 +215,7 @@ span{
 	height: 35px;
 	border-radius: 50%;
 	display: inline-flex;
+	text-decoration: none;
 	align-items: center;
 	justify-content: center;
 	background: var(--color-social);
@@ -525,9 +533,6 @@ header.sticky{
 }
 /*************************************************/
 /*Trabajos = work*/
-.cta{
-	transition: all .40s;
-}
 .cta-box{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(220px, auto));
