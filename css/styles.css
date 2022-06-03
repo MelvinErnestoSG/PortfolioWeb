@@ -125,7 +125,7 @@ a {
 	color: var(--color-text);
 	z-index: 1001;
 	cursor: pointer;
-	/*display: none;*/
+	display: none;
 }
 /*************************************************/
 /*Boton*/
@@ -170,18 +170,22 @@ section{
 	align-items: center;
 	grid-gap: 4rem;
 }
+.home h2{
+	font-size: var(--big-font);
+	font-weight: bold;
+}
 .home-text h1{
 	margin: 10px 0px 25px;
 	font-weight: bold;
 	font-size: var(--big-font);
 	line-height: 1;
-	font-weight: 500;
+	font-weight: bold;
 }
 .home-text h5{
 	margin-bottom: 23px;
 	font-weight: bold;
 	font-size: 19px;
-	font-weight: 500;
+	font-weight: bold;
 }
 span{
 	color: var(--color-primary);
@@ -660,6 +664,8 @@ input::placeholder{
 	color: var(--color-text);
 	font-weight: bold;
 }
+/*************************************************/
+/*email*/
 .contact .action form input[type="email"] {
 	max-width: 100%;
 	width: 470px;
@@ -672,22 +678,31 @@ input::placeholder{
 	margin: 0 10px 20px 0;
 	border-radius: 30px;
 }
+.contact .action form input[type="email"]:hover {
+	transform: scale(1.1);
+	background: var(--color-secondary);
+	color: var(--color-text);
+	font-weight: bold;
+	cursor: pointer;
+	transition: ease .50s;
+}
+/*************************************************/
+/*submit*/
 .contact .action form input[type="submit"] {
 	padding: 12px 40px;
-	background: transparent;
-	background: var(--color-primary);
-	border: 2px solid var(--color-secondary);
+	background: var(--color-secondary);
 	font-weight: bold;
 	margin: 0 10px 20px 0;
 	border-radius: 30px;
 	cursor: pointer;
+	border: none;
+	outline: none;
 	transition: ease .50s;
 	text-transform: uppercase;
 }
 .contact .action form input[type="submit"]:hover {
 	transform: scale(1.1);
 	background: var(--color-secondary);
-	border: 2px solid var(--color-primary);
 	color: var(--color-text);
 	font-weight: bold;
 	cursor: pointer;
