@@ -194,7 +194,6 @@ span{
 	color: var(--color-primary);
 	font-weight: bold;
 	font-size: 20px;
-	font-weight: 500;
 }
 .home-text p{
 	font-size: var(--p-font);
