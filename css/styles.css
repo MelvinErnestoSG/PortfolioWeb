@@ -122,7 +122,7 @@ a {
 /*************************************************/
 /*Menu*/
 #menu-icon{
-	font-size: var(--big-font);
+	font-size: 30px;
 	color: var(--color-text);
 	z-index: 1001;
 	cursor: pointer;
