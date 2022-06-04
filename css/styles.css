@@ -162,7 +162,6 @@ section{
 	background: url(../img/background.jpg);
 	background-size: cover;
 	background-position: center;
-	background-size: cover;
 	background-attachment: fixed;
 	position: relative;
 	display: grid;
@@ -174,18 +173,51 @@ section{
 	font-size: var(--big-font);
 	font-weight: bold;
 }
+.home-text{
+	max-width: 800px;
+}
 .home-text h1{
 	margin: 10px 0px 25px;
 	font-weight: bold;
 	font-size: var(--big-font);
 	line-height: 1;
+}
+.home-text .animated-text{
+	position: relative;
+	height: 40px;
+	overflow: hidden;
+}
+.home-text .animated-text h6{
+	position: relative;
+	font-size: 20px;
 	font-weight: bold;
+	line-height: 50px;
+	color: var(--color-primary);
+}
+.home-text .animated-text h6:last-child{
+	animation: text-move 10s infinite;
+}
+@keyframes text-move{
+	0%{
+		margin-top: 0;
+	}
+	25%{
+		margin-top: -55;
+	}
+	50%{
+		margin-top: -110;
+	}
+	75%{
+		margin-top: -55;
+	}
+	100%{
+		margin-top: 0;
+	}
 }
 .home-text h5{
 	margin-bottom: 23px;
 	font-weight: bold;
 	font-size: 19px;
-	font-weight: bold;
 }
 span{
 	color: var(--color-primary);
