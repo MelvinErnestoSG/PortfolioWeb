@@ -3,15 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<script defer src="js/app.js" type="text/javascript"></script>
-	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-	<title>Portfolio Website 2022</title>
+	<script defer src="js/app.js"></script>
+	<title>Portfolio Website</title>
 </head>
 <body>
 	<container class="container-flex-media">
@@ -33,18 +32,22 @@
 
 		<!--------home-------->
 		<section class="home" id="home">
+			<div class="home-img">
+				<img src="img/main.png">
+			</div>
+			<div class="animation-text">
+				<h6><span>Designer</span></h6>
+				<h6><span>Freelancer</span></h6>
+				<h6><span>Developer</span></h6>
+			</div>
 			<div class="home-text">
-				<h4>Hello, <span>I'm</span></h4>
-				<h1>James <span>Smith</span></h1>
-				<h5>A Creative Designer <span>From New York</span></h5>
-				<h5>A Freelancer <span>From New York</span></h5>
-				<h5>A Web Developer <span>From New York</span></h5>
-				<p>I'm creative designer based in New York, and I'm very passionate and dedicated to my work.</p>
+				<h5>Hello there, <span>I'am </span>Melvin Ernesto <span>From </span>REP DOM.</h5>
+				<p>I'am creative and I'am love and very passionate and dedicated to my work.</p>
 				<div class="social">
-					<a href="#"><i class='bx bxl-facebook'></i></a>
-					<a href="#"><i class='bx bxl-twitter'></i></a>
-					<a href="#"><i class='bx bxl-linkedin'></i></a>
-					<a href="#"><i class='bx bxl-behance'></i></a>
+					<a href="#"><i class='fa-brands fa-facebook-f'></i></a>
+					<a href="#"><i class='fa-brands fa-twitter'></i></a>
+					<a href="#"><i class='fa-brands fa-linkedin'></i></a>
+					<a href="#"><i class='fa-brands fa-behance'></i></a>
 				</div>
 				<div class="newslatter">
 					<form>
@@ -53,10 +56,8 @@
 					</form>
 				</div>
 			</div>
-			<div class="home-img">
-				<img src="img/main.png">
-			</div>
 		</section>
+		
 
 		<!--------About-------->
 		<section class="about" id="about">
@@ -229,17 +230,17 @@
 			</div>
 
 			<div class="cta-box">
-				<div class="wrap one"><i class="far fa-user"></i>
+				<div class="wrap one"><i class="far fa-bell"></i>
 					<h3>1200+</h3>
 					<p>Finished Projects</p>
 				</div>
 
-				<div class="wrap two"><i class="far fa-bell"></i>
+				<div class="wrap two"><i class="far fa-face-smile"></i>
 					<h3>350+</h3>
 					<p>Happy Customer</p>
 				</div>
 
-				<div class="wrap three"><i class='bx bx-cast'></i>
+				<div class="wrap three"><i class="far fa-user"></i>
 					<h3>15k</h3>
 					<p>Global Customers</p>
 				</div>
@@ -254,19 +255,7 @@
 			</div>
 			<div class="blogs">
 				<div class="blog">
-					<img src="img/port6.jpg" alt="">
-					<div class="blog-text">
-						<h4>
-							How to Create Your Own Website
-						</h4>
-						<p>
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-							Doloribus natus voluptas, eos obcaecati recusandae amet?
-						</p>
-					</div>
-				</div>
-				<div class="blog">
-					<img src="img/blog1.jpg" alt="">
+					<img src="img/blog1.jpg" alt="Desktop">
 					<div class="blog-text">
 						<h4>
 							How to Become an Expert in Web Design
@@ -278,7 +267,7 @@
 					</div>
 				</div>
 				<div class="blog">
-					<img src="img/blog2.jpg" alt="">
+					<img src="img/blog2.jpg" alt="Telephone">
 					<div class="blog-text">
 						<h4>
 							Become a Web Designer in 10 Days
@@ -290,7 +279,7 @@
 					</div>
 				</div>
 				<div class="blog">
-					<img src="img/blog3.jpg" alt="">
+					<img src="img/blog3.jpg" alt="Notebook">
 					<div class="blog-text">
 						<h3>
 							Debbuging made easy with Web Inspector
@@ -302,7 +291,7 @@
 					</div>
 				</div>
 				<div class="blog">
-					<img src="img/port1.jpg" alt="">
+					<img src="img/blog4.jpg" alt="Newspaper">
 					<div class="blog-text">
 						<h4>
 							Get started with Web Design and UI Design
@@ -314,18 +303,30 @@
 					</div>
 				</div>
 				<div class="blog">
-					<img src="img/port3.jpg" alt="">
+					<img src="img/blog5.jpg" alt="Keyboard">
+						<div class="blog-text">
+							<h4>
+								This is what you need to know about Web Design
+							</h4>
+							<p>
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+								Doloribus natus voluptas, eos obcaecati recusandae amet?
+							</p>
+						</d>
+					</div>
+				</div>
+				<div class="blog">
+					<img src="img/blog6.jpg" alt="Hardware">
 					<div class="blog-text">
 						<h4>
-							This is what you need to know about Web Design
+							How to Create Your Own Website
 						</h4>
 						<p>
 							Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
 							Doloribus natus voluptas, eos obcaecati recusandae amet?
 						</p>
-					</d>
+					</div>
 				</div>
-			</div>
 		</section>
 
 		<!--------contact-------->
