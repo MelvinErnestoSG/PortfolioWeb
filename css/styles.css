@@ -152,20 +152,123 @@ a {
 	color: var(--color-primary);
 }
 /*************************************************/
+/*Inicio*/
+.home {
+	min-height: 100vh;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 4rem;
+	align-items: center;
+	background: url(../img/background.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.home h2 {
+	font-size: 40px;
+	font-weight: bold;
+}
+.home h2 span{
+	font-size: 50px;
+	font-weight: bold;
+}
+span {
+	color: var(--color-primary);
+}
+/*************************************************/
+/*Texto para el inicio*/
+.home-text {
+	max-width: 800px;
+}
+.home-text h1 {
+	margin: 10px 0px 25px;
+	font-weight: bold;
+	font-size: var(--big-font);
+	line-height: 1;
+}
+.home-text h5 {
+	margin-bottom: 25px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.home-text h3 {
+	color: var(--color-primary);
+	font-weight: bold;
+	font-size: 20px;
+}
+.home-text p {
+	font-size: var(--p-font);
+	color: var(--color-p);
+	font-weight: bold;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+/*************************************************/
+/*animation-text*/
+.home-text .animation-text{
+	position: relative;
+	height: 40px;
+	overflow: hidden;
+}
+.home-text .animation-text h6{
+	font-size: 35px;
+	font-weight: bold;
+	line-height: 50px;
+	color: var(--color-primary);
+}
+.home-text .animation-text h6:nth-child(1){
+	animation: text-move 10s infinite;
+}
+@keyframes text-move {
+	0% {
+		margin-top: 0%;
+	}
+	25% {
+		margin-top: -55px;
+	}
+	50% {
+		margin-top: -110px;
+	}
+	75% {
+		margin-top: -55px;
+	}
+	100% {
+		margin-top: 0px;
+	}
+}
+.home-text .button{
+	display: inline-block;
+	background-color: var(--color-primary);
+	color:var(--color-text);
+	padding: 10px 20px;
+	margin: 5px 0;
+	text-decoration: none;
+	border: 2px solid var(--color-secondary);
+	transition: .4s ease;
+}
+.home-text .button:hover {
+	transform: scale(1.1);
+	background: none;
+	border: 2px solid var(--color-primary);
+	color: var(--color-primary);
+}
+.home-img img {
+	max-width: 100%;
+	width: 540px;
+	height: auto;
+}
+/*************************************************/
 /*animation-text*/
 .animation-text {
 	display: block;
 	width: 250px;
 	height: 40px;
-	color: var(--color-text);
 	font-size: 40px;
 	line-height: 40px;
 	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
 	overflow: hidden;
 }
 h6 {
@@ -195,60 +298,7 @@ h6 {
 section {
 	padding: 140px 18%;
 }
-/*************************************************/
-/*Inicio*/
-.home {
-	min-height: 100vh;
-	height: 100%;
-	width: 100%;
-	background: url(../img/background.jpg);
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	position: relative;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	align-items: center;
-	grid-gap: 4rem;
-}
-.home h2 {
-	font-size: var(--big-font);
-	font-weight: bold;
-}
-.home-text {
-	max-width: 800px;
-}
-.home-text h1 {
-	margin: 10px 0px 25px;
-	font-weight: bold;
-	font-size: var(--big-font);
-	line-height: 1;
-}
-.home-text h5 {
-	margin-bottom: 23px;
-	font-weight: bold;
-	font-size: 19px;
-}
-span {
-	color: var(--color-primary);
-}
-.home-text h3 {
-	color: var(--color-primary);
-	font-weight: bold;
-	font-size: 20px;
-}
-.home-text p {
-	font-size: var(--p-font);
-	color: var(--color-p);
-	font-weight: bold;
-	line-height: 28px;
-	margin-bottom: 20px;
-}
-.home-img img {
-	max-width: 100%;
-	width: 540px;
-	height: auto;
-}
+
 /*************************************************/
 /*boletín*/
 .newslatter form {
@@ -301,7 +351,7 @@ span {
 	align-items: center;
 	justify-content: center;
 	background-color: var(--color-text);
-	font-size: 17px;
+	font-size: 20px;
 	color: var(--color-secondary);
 	margin-right: 22px;
 	margin-bottom: 30px;
@@ -309,7 +359,8 @@ span {
 .social a:hover {
 	transform: scale(1.1);
 	background-color: var(--color-primary);
-	transition: 0.5s;
+	border: 2px solid var(--color-text);
+	transition: ease 0.5s;
 }
 /*************************************************/
 .header.sticky {
