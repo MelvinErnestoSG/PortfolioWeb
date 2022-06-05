@@ -3,13 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
 	<link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" type="text/css2?family">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"><!--libreria para el bx-menu-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-	<script defer src="js/app.js"></script>
+	<script defer src="js/app.js" type="text/javascript"></script>
 	<title>Portfolio Website</title>
 </head>
 <body>
@@ -17,8 +18,8 @@
 		<!--------header-------->
 		<header class="header">
 			<!--<a href="#" class="logo"><img src="img/logo.png"></a>-->
-			<div class="bx bx-menu" id="menu-icon"></div>
-			<h2 class="logo">Logo</h2>
+			<div class="bx bx-menu" id="menu-icon"></div><!--Esta parte se muestra con conexión internet-->
+			<h5 class="logo">Logo</h5>
 			<ul class="navbar">
 				<li><i class="fas fa-home"></i><a href="#home">Home</a></li>
 				<li><i class="fas fa-user"></i><a href="#about">About</a></li>
@@ -35,32 +36,19 @@
 			<div class="home-img">
 				<img src="img/main.png">
 			</div>
-			<div class="animation-text">
-				<h6><span>Designer</span></h6>
-				<h6><span>Freelancer</span></h6>
-				<h6><span>Developer</span></h6>
-			</div>
 			<div class="home-text">
-				<h5>Hello there, <span>I'am </span>Melvin Ernesto <span>From </span>REP DOM.</h5>
-				<p>I'am creative and I'am love and very passionate and dedicated to my work.</p>
-				<div class="social">
-					<a href="#"><i class='fa-brands fa-facebook-f'></i></a>
-					<a href="#"><i class='fa-brands fa-twitter'></i></a>
-					<a href="#"><i class='fa-brands fa-linkedin'></i></a>
-					<a href="#"><i class='fa-brands fa-behance'></i></a>
-					<a href="#"><i class='fa-brands fa-github'></i></a>
-					<a href="#"><i class='fa-brands fa-youtube'></i></a>
+				<h5>Hello there, <span>I'am <br></span>Melvin Ernesto <span>From </span>REP DOM.</h5>
+				<div class="animation-text">
+					<h6>Designer</h6>
+					<h6>Freelancer</h6>
+					<h6>Developer</h6>
 				</div>
-				<div class="newslatter">
-					<form>
-						<input type="email" name="email" id="mail" placeholder="Enter Your Email">
-						<input type="submit" name="submit" value="Lets Start">
-					</form>
+				<div class="button">Download CV
+					<i class="fas fa-download"></i>
 				</div>
 			</div>
 		</section>
 		
-
 		<!--------About-------->
 		<section class="about" id="about">
 			<div class="about-text">
@@ -68,7 +56,8 @@
 					<h2>About <span>Me</span></h2>
 					<h2>Hello there people</h2>
 				</div>
-				<p>I Can Design Anything You Want, and I'm very passionate and dedicated to my work.<br>
+				<p> I am creative and I am love and very passionate and dedicated to my work.<br>
+					I Can Design Anything You Want, and I am very passionate and dedicated to my work.<br>
 					With 20 years experience as a professional web developer.<br>
 					I enjoy every step of the design process, from discussion and collaboration.<br>
 					I am a front-end web developer.<br>
@@ -78,8 +67,11 @@
 					I also make the website more & more interactive with web animations.<br>
 					A responsive design makes your website accessible to all users, regardless of their device.
 				</p>
-                <div class="button">Download CV
-					<i class="fas fa-download"></i>
+				<div class="newslatter">
+					<form>
+						<input type="email" name="email" id="mail" placeholder="Enter Your Email">
+						<input type="submit" name="submit" value="Lets Start">
+					</form>
 				</div>
 			</div>
 			<div class="about-img">
@@ -94,7 +86,6 @@
 				<h2>My Amazing Work</h2>
 				<p>Most common methods for designing websites that work well on desktop is <br> responsive and adaptive design</p>
 			</div>
-
 			<div class="portfolio-content">
 				<div class="col">
 					<img src="img/work1.jpg">
@@ -103,7 +94,6 @@
 						<h5>Popup</h5>
 					</div>
 				</div>
-
 				<div class="col">
 					<img src="img/work2.jpg">
 					<div class="layer">
@@ -111,7 +101,6 @@
 						<h5>Popup</h5>
 					</div>
 				</div>
-
 				<div class="col">
 					<img src="img/work3.jpg">
 					<div class="layer">
@@ -119,7 +108,6 @@
 						<h5>Popup</h5>
 					</div>
 				</div>
-
 				<div class="col">
 					<img src="img/work4.jpg">
 					<div class="layer">
@@ -127,7 +115,6 @@
 						<h5>Popup</h5>
 					</div>
 				</div>
-
 				<div class="col">
 					<img src="img/work5.jpg">
 					<div class="layer">
@@ -135,7 +122,6 @@
 						<h5>Popup</h5>
 					</div>
 				</div>
-
 				<div class="col">
 					<img src="img/work6.jpg">
 					<div class="layer">
@@ -249,7 +235,7 @@
                 </div>
                 <div class="portfolio-item">
                     <div class="image">
-                        <img src="img/port2.jpg" alt="">
+                        <img src="img/port6.jpg" alt="">
                     </div>
                     <div class="hover-items">
                         <h3>Project Source</h3>
@@ -269,6 +255,44 @@
                 <div class="portfolio-item">
                     <div class="image">
                         <img src="img/port7.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+				<div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port8.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+				<div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port9.jpg" alt="">
                     </div>
                     <div class="hover-items">
                         <h3>Project Source</h3>
@@ -611,6 +635,14 @@
 				<div class="center">
 					<h2>Let's talk about everything</h2>
 					<p>Don't like forms? Send me an email.</p>
+					<div class="social">
+						<a href="#"><i class='fa-brands fa-facebook-f'></i></a>
+						<a href="#"><i class='fa-brands fa-twitter'></i></a>
+						<a href="#"><i class='fa-brands fa-linkedin'></i></a>
+						<a href="#"><i class='fa-brands fa-behance'></i></a>
+						<a href="#"><i class='fa-brands fa-github'></i></a>
+						<a href="#"><i class='fa-brands fa-youtube'></i></a>
+					</div>
 				</div>
 				<div class="action">
 					<form>
