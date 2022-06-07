@@ -59,14 +59,14 @@ body::-webkit-scrollbar-thumb {
 }
 /*************************************/
 main {
-	max-width: 600vp;
+	max-width: 600vh;
 	width: 100%;
 	padding: 110px 35% 5px;
 }
 /*************************************/
 h1 {
-	align-items: center;
-	padding: 10px 120px 30px;
+	/*padding: 10px 120px 30px;*/
+	letter-spacing: 2;
 	font-weight: bold;
 }
 /*************************************/
@@ -342,8 +342,8 @@ p {
 
 /* ----- -----  Mediaqueries ----- ----- */
 @media screen and (max-width: 800px) {
-	form {
-		width: 80%;
+	form{
+		grid-template-columns: 1fr;
 	}
 	.formulario {
 		grid-template-columns: 1fr;
@@ -351,10 +351,12 @@ p {
 	/*************************************/
 	.formulario__grupo-terminos
 		.formulario__mensaje
-		.formulario__grupo-boton-enviar {
+		.formulario__grupo-boton-enviar h1 {
 		grid-column: 1;
 	}
-	/*************************************/
+}
+/*************************************/
+@media (max-width: 540px) {
 	.formulario__boton {
 		width: 100%;
 	}
