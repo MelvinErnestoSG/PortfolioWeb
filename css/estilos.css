@@ -328,6 +328,17 @@ p {
 .formulario__grupo-incorrecto .formulario__input {
 	border: 3px solid var(--error-color);
 }
+/**************************************************************************/
+.ends {
+	text-align: center;
+	padding: 10px;
+	font-weight: bold;
+}
+.ends p {
+	color: #00467f;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
 
 /* ----- -----  Mediaqueries ----- ----- */
 @media screen and (max-width: 800px) {
