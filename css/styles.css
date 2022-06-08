@@ -8,14 +8,14 @@
 /*Variables*/
 :root {
 	--color-primary: #27ae60;
-	--color-secondary: #ffffff;
+	--color-secondary: #fff;
 	--color-text: #000;
 	--color-p: #a09dab;
 	--color-grey-2: #b2becd;
 	--color-grey-4: #454e56;
 	--color-grey-5: #4f5258;
-	--big-font: 4rem;
-	--h2-font: 3rem;
+	--big-font: 3rem;
+	--h2-font: 2rem;
 	--p-font: 1rem;
 	--box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
@@ -26,7 +26,10 @@ body {
 	font-family: "Jost", sans-serif;
 	background-color: var(--color-secondary);
 	color: var(--color-text);
-	height: 400vh;
+	height: 650px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 body::-webkit-scrollbar {
 	width: 20px;
@@ -134,7 +137,7 @@ a {
 	width: 80%;
 }
 /*************************************************/
-/*Boton*/
+/*Boton = Button*/
 .button {
 	display: inline-block;
 	text-decoration: none;
@@ -154,11 +157,12 @@ a {
 	color: var(--color-primary);
 }
 /*************************************************/
-/*Inicio*/
+/*Inicio = Home*/
 .home {
-	min-height: 100vh;
 	height: 100%;
+	min-height: 100vh;
 	width: 100%;
+	min-width: 100vh;
 	position: relative;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -169,12 +173,11 @@ a {
 	background-position: center;
 	background-attachment: fixed;
 }
-.home h2 {
-	font-size: 40px;
-	font-weight: bold;
+h2{
+	text-transform: uppercase;
 }
 .home h2 span{
-	font-size: 50px;
+	font-size: 40px;
 	font-weight: bold;
 }
 span {
@@ -263,7 +266,7 @@ span {
 	height: auto;
 }
 /*************************************************/
-/*animation-text*/
+/*More animation-text*/
 .animation-text {
 	display: block;
 	width: 250px;
@@ -359,12 +362,14 @@ section {
 	margin-bottom: 30px;
 }
 .social a:hover {
-	transform: scale(1.1);
-	background-color: var(--color-primary);
+	background-color: var(--color-secondary);
 	border: 2px solid var(--color-text);
-	transition: ease 0.5s;
+}
+.social a:hover i {
+	color: var(--color-text)
 }
 /*************************************************/
+/*cabecera pegajosa = header sticky*/
 .header.sticky {
 	background-color: var(--color-primary);
 	padding: 13px 18%;
@@ -668,6 +673,7 @@ section {
 }
 .portfolios .portfolio-item .hover-items .icons .icon:hover {
 	background-color: var(--color-secondary);
+	border: 2px solid var(--color-text);
 }
 .portfolios .portfolio-item .hover-items .icons .icon:hover i {
 	color: var(--color-text);
