@@ -1,0 +1,23 @@
+{
+  "name": "portfolioweb",
+  "version": "1.0.0",
+  "description": "Está hecho en HTML con CSS y JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MelvinErnestoSG/PortfolioWeb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MelvinErnestoSG/PortfolioWeb/issues"
+  },
+  "homepage": "https://github.com/MelvinErnestoSG/PortfolioWeb#readme",
+  "dependencies": {
+    "lax.js": "^2.0.3"
+  }
+}
