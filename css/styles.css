@@ -22,7 +22,6 @@
 /*************************************************/
 /*Cuerpo con la barra deslizable. = Body with the slide-up bar.*/
 body {
-	scroll-behavior: smooth;
 	font-family: "Jost", sans-serif;
 	background-color: var(--color-secondary);
 	color: var(--color-text);
@@ -30,6 +29,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
 	width: 20px;
