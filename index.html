@@ -10,8 +10,7 @@
 	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"><!--libreria para el bx-menu.-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<script defer src="js/app.js" type="text/javascript"></script>
-	<script src="node_module/lax.js/lib/lax.min.js"></script>
+	<script defer src="js/appMenu.js" type="text/javascript"></script>
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 	<link rel="icon" href="img/logo.ico">
 	<title>Portfolio Website</title>
@@ -24,12 +23,12 @@
 			<div class="bx bx-menu" id="menu-icon"></div><!--Esta parte se muestra con conexión internet.-->
 			<h5 class="logo">Logo</h5>
 			<ul class="navbar">
-				<li><i class="fas fa-home"></i><a href="#home">Home</a></li>
-				<li><i class="fas fa-user"></i><a href="#about">About</a></li>
-				<li><i class="fas fa-briefcase"></i><a href="#portfolio">Portfolio</a></li>
-				<li><i class='fas fa-certificate'></i><a href="#service">Service</a></li>
-				<li><i class="fas fa-blog"></i><a href="#blogs">Blogs</a></li>
-				<li><i class="fas fa-envelope-open"></i><a href="#contact">Contact</a></li>
+				<li><i class="fa fa-home"></i><a href="#home">Home</a></li>
+				<li><i class="fa fa-user"></i><a href="#about">About</a></li>
+				<li><i class="fa fa-briefcase"></i><a href="#portfolio">Portfolios</a></li>
+				<li><i class="fa fa-certificate"></i><a href="#service">Services</a></li>
+				<li><i class="fa fa-blog"></i><a href="#blog">Blogs</a></li>
+				<li><i class="fa fa-address-card"></i><a href="#contact">Contacts</a></li>
 			</ul>
 			<a href="indice.html" target="_blank" class="button">Register</a>
 		</header>
@@ -62,7 +61,6 @@
 			<div class="about-text">
 				<div class="heading">
 					<h2>About <span>Me</span></h2>
-					<h2><span>Hello</span>there <span>people</span></h2>
 				</div>
 				<p> I am creative and I am love and very passionate and dedicated to my work.<br>
 					I Can Design Anything You Want, and I am very passionate and dedicated to my work.<br>
@@ -137,7 +135,7 @@
 		</section>
 
 		<!--------Other-portfolio-------->
-		<section class="cta">
+		<section class="container__other-portfolio" title="Other portfolio">
 			<div class="heading">
 				<h2><span>Other </span>Port<span>folio</span></h2>
 				<h2>My <span>beautiful</span> Work</h2>
@@ -318,7 +316,7 @@
 		</section>
 
 		<!-------Other-More-portfolio-slider-3D----->
-		<section class="cta">
+		<section class="container__slider3D" title="Other works">
 			<div class="heading">
 				<h2>Ot<span>her</span> mo<span>re</span> Port<span>folio</span></h2>
 				<h2>My <span>beautiful</span> Work <span>in</span> Slider <span>3</span>D</h2>
@@ -348,7 +346,7 @@
 		</section>
 
 		<!--------service-------->
-		<section class="service" id="service" title="Service">
+		<section class="service" id="service" title="Services">
 			<div class="heading">
 				<h2>Ser<span>vice</span></h2>
 				<h2>What <span>I</span> Do <span>For</span> Cli<span>ents</span></h2>
@@ -402,7 +400,7 @@
 		</section>
 		
 		<!--------sub service-------->
-		<section class="sub-service">
+		<section class="sub-service" title="Sub-Services">
 			<div class="heading">
 				<h2>Other <span>Services</span></h2>
 				<h2>What <span>I</span> Do <span>For</span> Cli<span>ents</span></h2>
@@ -435,24 +433,24 @@
 		</section>
 
 		<!--------work-------->
-		<section class="cta">
+		<section class="container__Work" title="Work">
 			<div class="heading">
-				<h2><span>Comple</span>ted <span>1200</span>+</h2>
+				<h2><span>Com</span>ple<span>ted</span></h2>
 				<h2>Pro<span>jects </span>Success<span>fully</span></h2>
 			</div>
 
 			<div class="cta-box">
-				<div class="wrap one"><i class="far fa-bell"></i>
+				<div class="wrap one"><span><i class="far fa-bell"></i></span>
 					<h3>1200+</h3>
 					<p>Finished Projects</p>
 				</div>
 
-				<div class="wrap two"><i class="far fa-face-smile"></i>
+				<div class="wrap two"><span><i class="far fa-face-smile"></i></span>
 					<h3>350+</h3>
 					<p>Happy Customer</p>
 				</div>
 
-				<div class="wrap three"><i class="far fa-user"></i>
+				<div class="wrap three"><span><i class="far fa-user"></i></span>
 					<h3>15k</h3>
 					<p>Global Customers</p>
 				</div>
@@ -460,7 +458,7 @@
 		</section>
 
 		<!--------Blogs-------->
-		<section class="cta" id="blogs" title="Blogs">
+		<section class="container__blogs" id="blog" title="Blogs">
 			<div class="heading">
 				<h2>Blo<span>gs</span></h2>
 			</div>
@@ -492,9 +490,9 @@
 				<div class="blog">
 					<img src="img/blog3.jpg" alt="Notebook">
 					<div class="blog-text">
-						<h3>
+						<h4>
 							Debbuging made easy with Web Inspector
-						</h3>
+						</h4>
 						<p>
 							Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
 							Doloribus natus voluptas, eos obcaecati recusandae amet?
@@ -540,8 +538,8 @@
 				</div>
 		</section>
 
-		<!--------About-Stats-------->
-		<section class="cta">
+		<!--------About-Skills-------->
+		<section class="container__skills" title="Skills">
 			<div class="about-stats">
 				<div class="heading">
 					<h2>My <span>Skills</span></h2>
@@ -607,7 +605,7 @@
 		</section>
 
 		<!--------Timeline-------->
-		<section class="cta">
+		<section class="container__timeline">
 			<div class="heading">
 				<h2>My <span>Timeline</span></h2>
 			</div>
@@ -677,7 +675,7 @@
 
 		<!--------contact-------->
 		<div class="contact" id="contact" title="Contact">
-			<div class="cta">
+			<div class="container__social">
 				<div class="center">
 					<h2>Let's talk about everything</h2>
 					<p>Do not like forms? Send me an email or my social networks .</p>
