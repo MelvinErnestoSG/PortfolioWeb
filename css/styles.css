@@ -962,6 +962,13 @@ img {
 .timeline .timeline-item .tl-icon i {
 	font-size: 1.3rem;
 }
+.timeline .timeline-item .tl-icon i:hover {
+	background-color: var(--color-secondary);
+}
+.timeline .timeline-item .tl-icon:hover i {
+	color: var(--color-secondary);
+	background-color: var(--color-primary);
+}
 .timeline .timeline-item .tl-duration {
 	padding: 0.2rem 0.6rem;
 	background-color: var(--color-grey-5);
