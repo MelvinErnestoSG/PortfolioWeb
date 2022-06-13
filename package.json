@@ -2,7 +2,7 @@
   "name": "portfolioweb",
   "version": "1.0.0",
   "description": "Está hecho en HTML con CSS y JavaScript.",
-  "main": "index.js",
+  "main": "appMenu.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
