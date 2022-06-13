@@ -111,7 +111,6 @@ input{
 	left: 85%;
 	margin: 0px auto;
 }
-
 .formulario__input{
 	display: inline;
 	width: 100vh;
@@ -123,7 +122,6 @@ input{
 	line-height: 45px;
 	padding: 0% 20px 0% 5px;
 }
-
 .formulario__input:focus{
 	border: 3px solid var(--input-focus);
 	outline: none;
@@ -236,34 +234,32 @@ p{
 .formulario__grupo-correcto .formulario__label{
 	color: var(--acierto-color);
 }
-
+/*************************************/
 .formulario__grupo-correcto .formulario__validacion-estado{
 	color: var(--acierto-color);
 	opacity: 1;
 }
-
+/*************************************/
 .formulario__grupo-correcto .formulario__input{
 	border: 3px solid var(--acierto-color);
 }
-
+/*************************************/
 .formulario__grupo-correcto, .formulario__grupo-input{
     color: var(--acierto-color);
 }
-
 /* ----- -----  Estilos Para Grupo-Incorrecto Validacion-Estado ----- ----- */
 .formulario__grupo-incorrecto .formulario__label{
 	color: var(--error-color);
 }
-
+/*************************************/
 .formulario__grupo-incorrecto .formulario__validacion-estado{
 	color: var(--error-color);
 	opacity: 1;
 }
-
+/*************************************/
 .formulario__grupo-incorrecto .formulario__input {
 	border: 3px solid var(--error-color);
 }
-
 /* ----- -----  Mediaqueries ----- ----- */
 @media screen and (max-width: 800px) {
 	.formulario {
