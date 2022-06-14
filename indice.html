@@ -14,13 +14,13 @@
 	<title>Validación de Formulario</title>
 </head>
 <body>
-	<main>
-		<form action="" method="POST" class="formulario" id="formulario">
+	
+		<form action="" class="formulario" id="formulario" method="POST">
+			<h1>Formulario De Registro</h1>
 			<!-- Grupo: Usuario -->
 			<div class="formulario__grupo" id="grupo__usuario">
-				<h1 class="title">Formulario</h1>
-				<label for="usuario" class="formulario__label">
-					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAVxJREFUSEvNltFRw0AMRF86IBUAFRA6gAqgBKggUEGgAugAWqACKIEOoANIB8zO2JnkOFurYMbWjz/uoqddy1JmjBSzkbjsC74ETpqi34GXrIAs+Ax4Ao4K0CdwDby5BWTAgr4Gic9duAs+AD4APftCyk+B70i5C75qLI7y6VyWP0cXXfAdsIqSNef3gO73hgt+BJZRsv8A3wAPJvgWUKGDKNbno+aKYg0sADXZIGAlcVRbapXMfcdt9X1NZjVVmygL1u9ku9TLUoVGpt5paO+29/uAo9dnnU8eLFsvGnu7xqbGZLup9PxTVwuo71cLIhPaUurwzgL6rNZ8FjRaDF0FyQHBq3O7C+ysQNeB6qqsgd0V6IKl/LhclTVwZhO58F/DpQbWIDh0M5r3lFOqN1GCZfOXmSx7bb5tdwkesqnKwnaabDJgWd0O/6yV0X0Nk82fwMnP6khN+nw0xT/GNTcfILBjUQAAAABJRU5ErkJggg=="/>
+				<label for="usuario" class="formulario__label" title="Usuario">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAVxJREFUSEvNltFRw0AMRF86IBUAFRA6gAqgBKggUEGgAugAWqACKIEOoANIB8zO2JnkOFurYMbWjz/uoqddy1JmjBSzkbjsC74ETpqi34GXrIAs+Ax4Ao4K0CdwDby5BWTAgr4Gic9duAs+AD4APftCyk+B70i5C75qLI7y6VyWP0cXXfAdsIqSNef3gO73hgt+BJZRsv8A3wAPJvgWUKGDKNbno+aKYg0sADXZIGAlcVRbapXMfcdt9X1NZjVVmygL1u9ku9TLUoVGpt5paO+29/uAo9dnnU8eLFsvGnu7xqbGZLup9PxTVwuo71cLIhPaUurwzgL6rNZ8FjRaDF0FyQHBq3O7C+ysQNeB6qqsgd0V6IKl/LhclTVwZhO58F/DpQbWIDh0M5r3lFOqN1GCZfOXmSx7bb5tdwkesqnKwnaabDJgWd0O/6yV0X0Nk82fwMnP6khN+nw0xT/GNTcfILBjUQAAAABJRU5ErkJggg=="/></span>
 					<span>Usuario</span>
 				</label>
 				<div class="formulario__grupo-input">
@@ -31,7 +31,7 @@
 			</div>
 
 			<!-- Grupo: Nombre -->
-			<div class="formulario__grupo" id="grupo__nombre">
+			<div class="formulario__grupo" id="grupo__nombre" title="Nombre">
 				<label for="nombre" class="formulario__label">
 					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAZtJREFUSEvtl1EuRDEYhb9ZAR49GTtAvONdiBUgNmAHWIElYAdIJvGGZ4IdYAVYATmT9qa309v23mncSDS5mUnbv6f3/Oc//8yAnsagJ1xiwFvAMvAMXLe44AEwD9wAj01xTcBHwLETpO8nGeBXgC5sxyYwCsU1AX8As07AJzCXAF4FHrw9Ymr7TwD3RrXYUa5WgKffENcQWIjk8gt4aVhfB74Da+/Amz/vimsPOMtQ7g5w6e27A9YisYs+uAusklFuU0Nl5ZaaWHpNBPkxNQPpCpzDlNIjM6pGiTc+B3ZTNBkfkB+MRwlgHTaTAbwP6JJFgJeMl2fgcgEoLUWAD4HTHFSgZrvTUp0qI/9OEtjYB6YFtmUl84jVse1suqieGrD4tzkIHXJvri+BVCIxc6k337CAoRy7tISsL/ajIbTfPS9qIF2BRfNtQmBiS/uCBtIVONfxaow10deGaulCfq3HdzB1JqsHfVZdqgSwZSpE+QTFpcWl8/6BxUJrqt1Gb9MSmnMrQeKqmoBZkJh8s5loEpleX2Zbb/+dfgCwYmMfx0bHcAAAAABJRU5ErkJggg=="/>
 					<span>Nombre</span>
@@ -45,7 +45,7 @@
 
 			<!-- Grupo: Contraseña -->
 			<div class="formulario__grupo" id="grupo__password">
-				<label for="password" class="formulario__label">
+				<label for="password" class="formulario__label" title="Contraseña">
 					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAWhJREFUSEvtlY0xBEEQRt9FQAaIgAwQATIgAyJABMhABoiAiwAREAIZqKd2Vd/amdkdP6fKddXV1e78vP2+6e6ZMKeYzInLAvxrzv9pqw+BlcaKZ+DiO2zJKV4FroCNDugB2AP8iOrIge+AzcTOjm1XUyFZTqq8L2y89hXVKcVbwG0BrGKVl2IZ2AUu48SfBgtVgA4eRHjujF+ApYScV8BNcxGhznuMiZoDa49Z3Rdm9XWG2gf1+BTzHqUG4uSTkN3T5rl7tlp51pSZ+7b2tkpnoEPApcRxXKggVVrj7bsktATW6h3ARhLDxqHNN81LgTqw3pnnmX5SmrM61bG66mMH68Kz0D7FbvA0IGPbjzBZbCT+t3DHkkpTinNtMnXesX22JfaRvalFMau1WLU1Mbp9RrDXnyVRE0fA+ZiFEWy9Ho9ZHOaeNvU9eHkE7wP+asILYOYSKG1S6lyl9dXjC3C1dWMX/j+r3wAjukAfG7eZWwAAAABJRU5ErkJggg=="/>
 					<span>Contraseña</span>
 				</label>
@@ -58,7 +58,7 @@
 
 			<!-- Grupo: Contraseña 2 -->
 			<div class="formulario__grupo" id="grupo__password2">
-				<label for="password2" class="formulario__label">
+				<label for="password2" class="formulario__label" title="Repetir Contraseña">
 					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAYlJREFUSEvtlv8xBEEQhb+LgAwQASJABIgAESACRIAIyAARIAJEQAhkoL6r3aveuZ395crdH9dVV1c7vdOv35s3fTdiTjGaEy5L4H9TfqGlPgPWCim+gNtZyNLEeB14ALYSoHfgELCJwdEE/ALsZCqb2xuMCtnrJMu3lsIbf2GdY7wLPLcAy1jmMS6BG+A7LK4Cp8BVfHGWwPfAEaAHbEpwQSWgguZPSvCmM3bjSob1T1G0TAsg+81ioTRgNOcHoJJjNZqADwpX12Hr6sckkYLHdAW0Ddi8HXpupbtfi+f0bHPMXZ8C7QLc98bEMy33xjOf1GuTeh9wkMRwcCjzU43UpZHShqfA64BzE6uuWJxgFi/Npbx6xAaj4bZzrlaqz8SxTXLrUAeJ38fAXXKm0XBeJa/UOFLGTWMy10Acn7L0OR0gmrRyCyKwEst2SPQenxHYn7/rIajAeTEqO2+PwN7Xi847qy86h93fOSKw5vAzJDTNxDhdCiz0X58uBHq/s2TcW7KhG+Ym9S/Y+UwfgRl/2QAAAABJRU5ErkJggg=="/></span>
 					<span>Repetir Contraseña</span>
 				</label>
@@ -71,7 +71,7 @@
 
 			<!-- Grupo: Correo Electronico -->
 			<div class="formulario__grupo" id="grupo__correo">
-				<label for="correo" class="formulario__label">
+				<label for="correo" class="formulario__label" title="Correo">
 					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAQRJREFUSEvtlu0RwUAQhp9UQCeoBB3QARWgAyqgAzpBRcyarNnJ3OU+4vgh+y+Z2332fbOXu4ofRfUjLj34a843rT4BU2BYoIM9sNa6FjwDzgWAtuQcuMgLC94Cm8LgHSAcL3gCiO2jjo3cgQVwresEwepEFxfeEOCRCpb140T1qvJm3IoGS9ISsMkx6q1KbfpYNy/PQau1WYHJYg2fepdKV6PRYAGG1IdU2vlMArep18bsmrYtmQX2qXd9S98uzAa71McMneZ1BluLZeBi4yPgWFjn4coBNXN6xS9HUqYz13an1XJ8yX+1ZDgvAgKUM1huIoMC9AOw0rr99baAw+6S/2f1E/vnSh8jOyXlAAAAAElFTkSuQmCC"/>
 					<span>Electrónico</span>
 				</label>
@@ -83,7 +83,7 @@
 			</div>
 
 			<!-- Grupo: Teléfono -->
-			<div class="formulario__grupo" id="grupo__telefono">
+			<div class="formulario__grupo" id="grupo__telefono" title="Teléfono">
 				<label for="telefono" class="formulario__label">
 					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAWRJREFUSEvtl9E1RDEQhr+tgA5QAR3QAR2gg1UBKkAFqIAO0AEVLBWgAs7n3Dj3kGSTu9lzPZiXfdjMfJmZP5PcCSPZZCQuOfAesNlwY2/ANeBvEnwF7DeEhlCHgLGTYHe1sgTwKXCSA38sAWrIJuCHrmzPgHo4KKjSwuALYPqjKuvA4xx4FKzjWhfsPlPqF8C1MTPry4xvFGzTjwt6G8s2uLmh2RjgVeC1FuxuQwnvMs6KaSPxvyK7qQX31887TufAUQSgNrZrwaXiCnGF3HZK3umOU0p0wWchcRXoL7nkb4FLxfUE2GNLrdCChXIrsNScHzS53rs+2teceaS8gXYji6onl1AzciSWWuxqre7x9z1aSgXM3I2GMaxrFdhsDTLEvEjOeo7JUscml9efZR5i+vWnYJW4VO7Xc2WAmYg3VrAq8ABe0uUf/Ks0oz1v3Ymjb6thg30ym1D2Qd+QFw812rfTJ7jzWh9q7pwjAAAAAElFTkSuQmCC"/>
 					<span>Teléfono</span>
@@ -98,8 +98,8 @@
 				<!-- Grupo: Terminos y Condiciones -->
 				<div class="formulario__grupo" id="grupo__terminos">
 					<label class="formulario__label">
+						<br><center>Acepto los Terminos y Condiciones</center>
 						<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
-						Acepto los Terminos y Condiciones
 					</label>
 				</div>
 
@@ -108,10 +108,11 @@
 			</div>
 
 			<div class="formulario__grupo" id="formulario__grupo-boton-enviar">
-				<button type="submit" class="formulario__boton"><span>Enviar</span></button>
+				<button type="submit" class="formulario__boton">Enviar</button>
+				<center><p class="link"><a href="#">¿Ya tienes cuenta?</a></p></center>
 				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
 			</div>
+			
 		</form>
-	</main>
 </body>
 </html>
