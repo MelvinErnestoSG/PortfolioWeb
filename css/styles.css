@@ -25,10 +25,8 @@ body {
 	font-family: "Jost", sans-serif;
 	background-color: var(--color-secondary);
 	color: var(--color-text);
+	font-size: 1.1rem;
 	height: 650px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
