@@ -179,7 +179,7 @@ h2 {
 	text-transform: uppercase;
 }
 .home h2 span {
-	font-size: 40px;
+	font-size: var(--p-font);
 	font-weight: bold;
 }
 span {
@@ -200,7 +200,6 @@ span {
 	font-size: 20px;
 }
 .home-text h3 {
-	color: 25px;
 	font-weight: bold;
 	font-size: 20px;
 }
@@ -269,13 +268,20 @@ span {
 }
 .home-img img {
 	max-width: 100%;
-	width: 540px;
+	width: 500px;
+	max-height: 100%;
 	height: auto;
 }
 /*************************************************/
 /*Sección*/
 section {
-	padding: 140px 18%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	padding: 150px 18%;
 }
 /*************************************************/
 /*Titulos cabecera para cada clase*/
@@ -303,7 +309,7 @@ section {
 /*Acerca*/
 .about {
 	display: grid;
-	grid-template-columns: repeat(2, 2fr);
+	grid-template-columns: repeat(2, 1fr);
 	align-items: center;
 	grid-gap: 1rem;
 }
@@ -691,10 +697,6 @@ img {
 }
 /*************************************************/
 /*Sub Servicios*/
-.sub-service {
-	display: column;
-	flex-direction: row;
-}
 .items {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(220px, auto));
