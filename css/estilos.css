@@ -51,7 +51,7 @@ body::-webkit-scrollbar-thumb {
 /***************************/
 .formulario {
 	position: absolute;
-	min-width: 280px;
+	min-width: 300px;
 	max-width: 25%;
 	width: 25%;
 	height: 121%;
@@ -289,17 +289,26 @@ p {
 }
 /* ----- -----  Mediaqueries ----- ----- */
 @media screen and (max-width: 800px) {
-	.formulario {
+	.formulario{
 		grid-template-columns: 1fr;
 	}
 
-	.formulario__grupo-terminos
-		.formulario__mensaje
-		.formulario__grupo-boton-enviar {
-		grid-column: 1;
+	h1::after {
+		content: "";
+		position: relative;
+		height: 3px;
+		border-radius: 3px;
+		background-color: var(--text-color);
+		width: 330%;
+		right: 50rem;
+		bottom: 0;
 	}
 
-	.formulario__boton {
+	.formulario__grupo-terminos .formulario__mensaje .formulario__grupo-boton-enviar{
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.formulario__boton{
 		width: 100%;
 	}
 }
