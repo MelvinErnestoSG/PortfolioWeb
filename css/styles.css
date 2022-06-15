@@ -10,8 +10,10 @@
 	--color-primary: #27ae60;
 	--color-background: #F5F4F6;
 	--color-text: #000000;
-	--color-p: #a09dab;
 	--box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	--big-font: 4rem;
+	--h2-font: 2.3rem;
+	--p-font: 1rem;
 }
 /*************************************************/
 /*Cuerpo con la barra deslizable*/
@@ -212,7 +214,6 @@ span {
 .media__cover video {
     width: 700px;
     margin-top: -80px;
-	background-color: transparent;
 }
 /*************************************************/
 /*animation-text*/
@@ -372,18 +373,18 @@ section {
 /*************************************************/
 /*Item1*/
 .about-container .right-about .about-item1 {
-	border: 1px solid var(--color-grey-5);
+	border: 1px solid var(--color-text);
 	border-radius: 5px;
 	transition: all 0.4s ease-in-out;
 	box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.3);
+	background-color: #baebcd;
 	font-weight: bold;
 }
 .about-container .right-about .about-item1:hover {
 	cursor: default;
 	transform: translateY(-5px);
 	border: 1px solid var(--color-primary);
-	box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
-	background-color: #baebcd;
+	box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.3);
 	font-weight: bold;
 }
 .about-container .right-about .about-item1 .abt-text {
@@ -411,15 +412,16 @@ section {
 	top: 15px;
 	width: 2rem;
 	height: 2px;
-	background-color: var(--color-grey-5);
+	background-color: var(--color-text);
 }
 /*************************************************/
 /*Item2*/
 .about-container .right-about .about-item2 {
-	border: 1px solid var(--color-grey-5);
+	border: 1px solid var(--color-text);
 	border-radius: 5px;
 	transition: all 0.4s ease-in-out;
 	box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.3);
+	background-color: #d9d1fa;
 	font-weight: bold;
 }
 .about-container .right-about .about-item2:hover {
@@ -427,7 +429,6 @@ section {
 	transform: translateY(-5px);
 	border: 1px solid var(--color-primary);
 	box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
-	background-color: #d9d1fa;
 	font-weight: bold;
 }
 .about-container .right-about .about-item2 .abt-text {
@@ -455,23 +456,23 @@ section {
 	top: 15px;
 	width: 2rem;
 	height: 2px;
-	background-color: var(--color-grey-5);
+	background-color: var(--color-text);
 }
 /*************************************************/
 /*Item3*/
 .about-container .right-about .about-item3 {
-	border: 1px solid var(--color-grey-5);
+	border: 1px solid var(--color-text);
 	border-radius: 5px;
 	transition: all 0.4s ease-in-out;
 	box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.3);
+	background-color: #faedce;
 	font-weight: bold;
 }
 .about-container .right-about .about-item3:hover {
 	cursor: default;
 	transform: translateY(-5px);
 	border: 1px solid var(--color-primary);
-	box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
-	background-color: #faedce;
+	box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.3);
 	font-weight: bold;
 }
 .about-container .right-about .about-item3 .abt-text {
@@ -499,23 +500,23 @@ section {
 	top: 15px;
 	width: 2rem;
 	height: 2px;
-	background-color: var(--color-grey-5);
+	background-color: var(--color-text);
 }
 /*************************************************/
 /*Item4*/
 .about-container .right-about .about-item4 {
-	border: 1px solid var(--color-grey-5);
+	border: 1px solid var(--color-text);
 	border-radius: 5px;
 	transition: all 0.4s ease-in-out;
 	box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.3);
+	background-color: #bad1eb;
 	font-weight: bold;
 }
 .about-container .right-about .about-item4:hover {
 	cursor: default;
 	transform: translateY(-5px);
 	border: 1px solid var(--color-primary);
-	box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
-	background-color: #bad1eb;
+	box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.3);
 	font-weight: bold;
 }
 .about-container .right-about .about-item4 .abt-text {
@@ -543,7 +544,7 @@ section {
 	top: 15px;
 	width: 2rem;
 	height: 2px;
-	background-color: var(--color-grey-5);
+	background-color: var(--color-text);
 }
 .about-container .left-about {
 	padding-right: 5rem;
@@ -725,7 +726,7 @@ a {
 }
 .portfolios .portfolio-item .hover-items h3 {
 	font-size: 1.5rem;
-	color: var(--color-background);
+	color: var(--color-text);
 	margin-bottom: 1.5rem;
 }
 .portfolios .portfolio-item .hover-items .icons {
@@ -870,12 +871,12 @@ img {
 .row p {
 	color: var(--color-p);
 	line-height: 30px;
-	font-size: var(--p-font);
+	font-size: 20px;
 	font-weight: bold;
 }
 .row:hover {
 	box-shadow: var(--box-shadow);
-	background-color: var(--color-grey-4);
+	background-color: #baebcd;
 	transform: translateY(-8px);
 }
 .service img {
@@ -902,26 +903,25 @@ img {
 .row h3 {
 	background-color: var(--color-primary);
 	width: 100px;
-	font-size: var(--p-font);
+	font-size: 20px;
 	font-weight: bold;
 	margin-bottom: 2px;
 }
 .row h5 {
-	font-size: var(--p-font);
+	font-size: 20px;
 	font-weight: bold;
 	margin-bottom: 19px;
 }
 .row p {
-	font-size: var(--p-font);
-	color: var(--color-p);
+	font-size: 20px;
+	color: var(--color-text);
 	font-weight: bold;
 	line-height: 28px;
 }
 .row:hover {
 	will-change: transform;
 	box-shadow: var(--box-shadow);
-	transform: perspective(1000px) rotateX(4.8deg) rotateY(10.23deg)
-		scale3d(1.05, 1.05, 1.05);
+	transform: perspective(1000px) rotateX(4.8deg) rotateY(10.23deg) scale3d(1.05, 1.05, 1.05);
 }
 /*************************************************/
 /*Sub Servicios*/
@@ -955,102 +955,16 @@ img {
 }
 .sub-box p {
 	font-size: 20px;
-	color: var(--color-p);
+	color: var(--color-text);
 	line-height: 29px;
 	font-weight: bold;
 }
 .sub-box:hover {
-	background-color: var(--color-grey-2);
+	background-color: #baebcd;
 	box-shadow: var(--box-shadow);
 	border-radius: 12px;
 	will-change: transform;
-	transform: perspective(1000px) rotateX(4.8deg) rotateY(10.23deg)
-		scale3d(1.05, 1.05, 1.05);
-}
-/*******************************/
-/*Trabajos*/
-.container-box {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(220px, auto));
-	grid-gap: 2rem;
-	align-items: center;
-	margin-top: 5rem;
-	text-align: center;
-}
-.wrap {
-	color: var(--color-text);
-	box-shadow: var(--box-shadow);
-	border-radius: 12px;
-	padding: 50px 50px 50px 50px;
-	transition: ease 0.4s;
-	cursor: pointer;
-}
-.wrap h3 {
-	font-size: var(--p-font);
-	font-weight: bold;
-	margin-bottom: 2px;
-}
-.wrap p {
-	font-size: var(--p-font);
-	font-weight: bold;
-}
-.one {
-	background: #baebcd;
-	will-change: transform;
-	transform: perspective(1000px) rotateX(4.8deg) rotateY(10.23deg)
-		scale3d(1.05, 1.05, 1.05);
-}
-.one:hover {
-	background-color: var(--color-grey-2);
-	transform: scale(1.1);
-	cursor: pointer;
-}
-.one h3:hover {
-	color: var(--color-primary);
-	cursor: pointer;
-}
-.one p:hover {
-	color: var(--color-primary);
-	cursor: pointer;
-}
-.two {
-	background: #d9d1fa;
-	will-change: transform;
-	transform: perspective(1000px) rotateX(4.8deg) rotateY(10.23deg)
-		scale3d(1.05, 1.05, 1.05);
-}
-.two:hover {
-	background-color: var(--color-grey-2);
-	transform: scale(1.1);
-	cursor: pointer;
-}
-.two h3:hover {
-	color: var(--color-primary);
-	cursor: pointer;
-}
-.two p:hover {
-	color: var(--color-primary);
-	cursor: pointer;
-}
-.three {
-	background: #faedce;
-	will-change: transform;
-	transform: perspective(1000px) rotateX(4.8deg) rotateY(10.23deg)
-		scale3d(1.05, 1.05, 1.05);
-	cursor: pointer;
-}
-.three:hover {
-	background-color: var(--color-grey-2);
-	transform: scale(1.1);
-	cursor: pointer;
-}
-.three h3:hover {
-	color: var(--color-primary);
-	cursor: pointer;
-}
-.three p:hover {
-	color: var(--color-primary);
-	cursor: pointer;
+	transform: perspective(1000px) rotateX(4.8deg) rotateY(10.23deg) scale3d(1.05, 1.05, 1.05);
 }
 /*************************************************/
 /*Blogs*/
@@ -1063,7 +977,7 @@ img {
 }
 .blogs .blog {
 	position: relative;
-	background-color: var(--color-grey-5);
+	background-color: var(--color-background);
 	border-radius: 5px;
 	box-shadow: var(--box-shadow);
 	transition: all 0.4s;
@@ -1095,7 +1009,7 @@ img {
 	transition: all 0.4s;
 }
 .blogs .blog .blog-text h4 {
-	font-size: var(--p-font);
+	font-size: 20px;
 	margin-bottom: 0.7rem;
 	font-weight: bold;
 	cursor: pointer;
@@ -1106,7 +1020,7 @@ img {
 	transition: all 0.4s;
 }
 .blogs .blog .blog-text p {
-	color: var(--color-grey-2);
+	color: var(--color-text);
 	line-height: 2rem;
 	font-weight: bold;
 	padding-bottom: 1rem;
@@ -1140,7 +1054,7 @@ img {
 .about-stats .progress-bars .progress-bar .progress-con .progress {
 	width: 100%;
 	height: 0.45rem;
-	background-color: var(--color-grey-4);
+	background-color: var(--color-text);
 	margin-left: 1rem;
 	position: relative;
 }
@@ -1182,7 +1096,7 @@ img {
 .timeline .timeline-item {
 	position: relative;
 	padding-left: 3rem;
-	border-left: 1px solid var(--color-grey-5);
+	border-left: 1px solid var(--color-primary);
 }
 .timeline .timeline-item .tl-icon {
 	position: absolute;
@@ -1200,7 +1114,7 @@ img {
 	font-size: 1.3rem;
 }
 .timeline .timeline-item .tl-icon i:hover {
-	background-color: var(--color-background);
+	background-color: var(--color-text);
 }
 .timeline .timeline-item .tl-icon:hover i {
 	color: var(--color-background);
@@ -1208,7 +1122,7 @@ img {
 }
 .timeline .timeline-item .tl-duration {
 	padding: 0.2rem 0.6rem;
-	background-color: var(--color-grey-5);
+	background-color: var(--color-primary);
 	border-radius: 15px;
 	display: inline-block;
 	font-size: 0.8rem;
@@ -1222,12 +1136,12 @@ img {
 	font-weight: bold;
 }
 .timeline .timeline-item h5 span {
-	color: var(--color-grey-2);
+	color: var(--color-primary);
 	font-weight: bold;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 }
 .timeline .timeline-item p {
-	color: var(--color-grey-2);
+	color: var(--color-text);
 }
 /*************************************************/
 /*Social*/
@@ -1331,7 +1245,7 @@ input::placeholder {
 	color: var(--color-primary);
 }
 .ends p {
-	font-size: var(--p-font);
+	font-size: 20px;
 	letter-spacing: 1px;
 }
 /*************************************************/
