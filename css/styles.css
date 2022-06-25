@@ -26,7 +26,7 @@ body {
 	scroll-behavior: smooth;
 }
 body::-webkit-scrollbar {
-	width: 30px;
+	width: 10px;
 }
 body::-webkit-scrollbar-track {
 	background-color: transparent;
@@ -1040,62 +1040,120 @@ img {
 }
 /*************************************************/
 /*Skills*/
-.about-stats {
-	padding-bottom: 4rem;
-}
-.about-stats .progress-bars {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 2rem;
-}
-.about-stats .progress-bars .progress-bar {
+.container-skills {
+	width: 100%;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
-.about-stats .progress-bars .progress-bar .prog-title {
-	text-transform: uppercase;
+.skills h2 {
 	font-weight: bold;
+	letter-spacing: 1px;
+	margin-top: 30px;
+	margin-bottom: 5px;
+	color: var(--color-text);
+	font-size: 16px;
+	text-transform: uppercase;
 }
-.about-stats .progress-bars .progress-bar .progress-con {
+.progress-bar {
+	font-weight: bold;
+	background-color: var(--color-text);
+	width: 900px;
+	height: 10px;
+	border-radius: 5px;
+}
+.progress-bar div {
+	height: 10px;
+	border-radius: 5px;
+	width: 0%;
+	background-color: var(--color-primary);
+}
+.progress-bar div span {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background-color: var(--color-primary);
+	float: right;
+	margin-top: -15px;
+	margin-right: -20px;
+	color: var(--color-text);
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
-.about-stats .progress-bars .progress-bar .progress-con .prog-text {
-	color: var(--color-primary);
+.html {
+	width: 90%;
+	animation: html 1s linear forwards;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress {
-	width: 100%;
-	height: 0.45rem;
-	background-color: var(--color-text);
-	margin-left: 1rem;
-	position: relative;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress span {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	background-color: var(--color-primary);
-	transition: all 0.4s;
-	width: 60%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .html {
-	width: 80%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .css {
+.css3 {
 	width: 95%;
+	animation: css3 1s linear forwards;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .js {
+.javascript {
 	width: 75%;
+	animation: javascript 1s linear forwards;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .react {
+.reactjs {
+	width: 90%;
+	animation: reactjs 1s linear forwards;
+}
+.nodejs {
 	width: 75%;
+	animation: nodejs 1s linear forwards;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .node {
-	width: 87%;
+.python {
+	width: 55%;
+	animation: python 1s linear forwards;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .python {
-	width: 70%;
+.html span {
+	border: 2px solid var(--color-text);
+}
+.css3 span {
+	border: 2px solid var(--color-text);
+}
+.javascript span {
+	border: 2px solid var(--color-text);
+}
+.reactjs span {
+	border: 2px solid var(--color-text);
+}
+.nodejs span {
+	border: 2px solid var(--color-text);
+}
+.python span {
+	border: 2px solid var(--color-text);
+}
+@keyframes html {
+	100%{
+		width: 90%;
+	}
+}
+@keyframes css3 {
+	100%{
+		width: 95%;
+	}
+}
+@keyframes javascript {
+	100%{
+		width: 75%;
+	}
+}
+@keyframes reactjs {
+	100%{
+		width: 90%;
+	}
+}
+@keyframes nodejs {
+	100%{
+		width: 75%;
+	}
+}
+@keyframes python {
+	100%{
+		width: 55%;
+	}
 }
 /*************************************************/
 /*Timeline*/
