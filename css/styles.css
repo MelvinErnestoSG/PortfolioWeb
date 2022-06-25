@@ -420,7 +420,7 @@ section {
 	border-radius: 5px;
 	transition: all 0.4s ease-in-out;
 	box-shadow: var(--box-shadow);
-	background-color: #d9d1fa;
+	background-color: #baebcd;
 	font-weight: bold;
 }
 .about-container .right-about .about-item2:hover {
@@ -464,7 +464,7 @@ section {
 	border-radius: 5px;
 	transition: all 0.4s ease-in-out;
 	box-shadow: var(--box-shadow);
-	background-color: #faedce;
+	background-color: #baebcd;
 	font-weight: bold;
 }
 .about-container .right-about .about-item3:hover {
@@ -508,7 +508,7 @@ section {
 	border-radius: 5px;
 	transition: all 0.4s ease-in-out;
 	box-shadow: var(--box-shadow);
-	background-color: #bad1eb;
+	background-color: #baebcd;
 	font-weight: bold;
 }
 .about-container .right-about .about-item4:hover {
@@ -847,48 +847,6 @@ img {
 	transition: ease 0.45s;
 	cursor: pointer;
 }
-.row i {
-	margin-bottom: 20px;
-}
-/*********************************/
-.row h3 {
-	color: var(--color-text);
-	font-size: 20px;
-	font-weight: bold;
-	margin-bottom: 15px;
-}
-.row:hover h3{
-	color: var(--color-background);
-}
-/*********************************/
-.row h5 {
-	color: var(--color-primary);
-	font-size: 20px;
-	font-weight: bold;
-	margin-bottom: 15px;
-}
-.row:hover h5{
-	color: var(--color-background);
-}
-/*********************************/
-.row p {
-	color: var(--color-text);
-	line-height: 30px;
-	font-size: 14px;
-	font-weight: bold;
-}
-.row p:hover{
-	color: var(--color-background);
-	line-height: 30px;
-	font-size: 14px;
-	font-weight: bold;
-}
-/*********************************/
-.row:hover {
-	box-shadow: var(--box-shadow);
-	transform: translateY(-8px);
-	background-color: var(--color-primary);
-}
 .service img {
 	height: 65px;
 	width: 65px;
@@ -899,31 +857,39 @@ img {
 	box-shadow: var(--box-shadow);
 }
 .service .s-one img {
-	background-color: #ebbac9;
+	background-color: var(--color-primary);
 	box-shadow: var(--box-shadow);
 }
 .service .s-two img {
-	background-color: #baebe7;
+	background-color: var(--color-primary);
 	box-shadow: var(--box-shadow);
 }
 .service .s-three img {
-	background-color: #d9d1fa;
+	background-color: var(--color-primary);
 	box-shadow: var(--box-shadow);
 }
 .service .s-four img {
-	background-color: #faedce;
+	background-color: var(--color-primary);
 	box-shadow: var(--box-shadow);
 }
 .row h3 {
 	width: 100px;
+	color: var(--color-text);
 	font-size: 1rem;
 	font-weight: bold;
 	margin-bottom: 2px;
 }
+.row:hover h3{
+	color: var(--color-text);
+}
 .row h5 {
 	font-size: 1rem;
+	color: var(--color-text);
 	font-weight: bold;
 	margin-bottom: 19px;
+}
+.row:hover h5{
+	color: var(--color-text);
 }
 .row p {
 	font-size: 14px;
@@ -932,6 +898,7 @@ img {
 	line-height: 28px;
 }
 .row:hover {
+	color: var(--color-text);
 	will-change: transform;
 	box-shadow: var(--box-shadow);
 	transform: perspective(1000px) rotateX(4.8deg) rotateY(10.23deg) scale3d(1.05, 1.05, 1.05);
