@@ -213,6 +213,7 @@ h2, span {
 	width: 500px;
 	margin-top: -50px;
 	margin-bottom: -50px;
+	background-attachment: var(--color-primary);
 }
 /*************************************************/
 /*animation-text*/
@@ -1306,12 +1307,11 @@ footer {
 	padding: 50px 0px;
 	background-image: url(../img/background-footer.svg);
 	background-size: cover;
-	background-color: var(--color-primary);
-	/*background-color: #d0f0f8;
-    -webkit-mask-image: url("../Images/background-footer.svg");
-    mask-image: url("../Images/background-footer.svg");
+	*background-color: var(--color-primary);
+    -webkit-mask-image: url("../img/background-footer.svg");
+    mask-image: url("../img/");
     -webkit-mask-size: cover;
-    mask-size: cover;*/
+    mask-size: cover;
 }
 .ends {
 	display: flex;
