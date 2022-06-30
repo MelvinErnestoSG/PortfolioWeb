@@ -8,6 +8,7 @@
 /*Variables*/
 :root {
 	--color-primary: #27ae60;
+	--color-secondary: #baebcd;
 	--color-background: green;
 	--color-text: #000;
 	--box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -354,49 +355,49 @@ section {
 /*Acerca*/
 .about {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(1, 1fr);
 	align-items: center;
 	grid-gap: 1rem;
 }
-.about-container {
+.about__container {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(1, 1fr);
 	padding-top: 3.5rem;
 	padding-bottom: 5rem;
 }
-.about-container .right-about {
+.right__about {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 2rem;
 }
 /*************************************************/
 /*Item1*/
-.about-container .right-about .about-item1 {
-	border: 1px solid var(--color-text);
+.right__about .about-item1 {
+	border: 2px solid var(--color-text);
 	border-radius: 5px;
 	transition: ease 0.4s;
 	box-shadow: var(--box-shadow);
-	background-color: #baebcd;
+	background-color: var(--color-secondary);
 	font-weight: bold;
 }
-.about-container .right-about .about-item1:hover {
+.right__about .about-item1:hover {
 	cursor: default;
 	transform: translateY(-5px);
-	border: 1px solid var(--color-primary);
+	border: 2px solid var(--color-primary);
 	box-shadow: var(--box-shadow);
 	font-weight: bold;
 }
-.about-container .right-about .about-item1 .abt-text {
+.right__about .about-item1 {
 	padding: 1.5rem;
 	display: flex;
 	flex-direction: column;
 }
-.about-container .right-about .about-item1 .abt-text .large-text {
+.right__about .about-item1 .number {
 	font-size: 3rem;
 	font-weight: bold;
 	color: var(--color-primary);
 }
-.about-container .right-about .about-item1 .abt-text .small-text {
+.right__about .about-item1 .text {
 	padding-left: 3rem;
 	position: relative;
 	text-transform: uppercase;
@@ -404,7 +405,7 @@ section {
 	color: var(--color-text);
 	letter-spacing: 2px;
 }
-.about-container .right-about .about-item1 .abt-text .small-text::before {
+.right__about .about-item1 .text::before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -415,32 +416,32 @@ section {
 }
 /*************************************************/
 /*Item2*/
-.about-container .right-about .about-item2 {
-	border: 1px solid var(--color-text);
+.right__about .about-item2 {
+	border: 2px solid var(--color-text);
 	border-radius: 5px;
 	transition: ease 0.4s;
 	box-shadow: var(--box-shadow);
-	background-color: #baebcd;
+	background-color: var(--color-secondary);
 	font-weight: bold;
 }
-.about-container .right-about .about-item2:hover {
+.right__about .about-item2:hover {
 	cursor: default;
 	transform: translateY(-5px);
-	border: 1px solid var(--color-primary);
+	border: 2px solid var(--color-primary);
 	box-shadow: var(--box-shadow);
 	font-weight: bold;
 }
-.about-container .right-about .about-item2 .abt-text {
+.right__about .about-item2 {
 	padding: 1.5rem;
 	display: flex;
 	flex-direction: column;
 }
-.about-container .right-about .about-item2 .abt-text .large-text {
+.right__about .about-item2 .number {
 	font-size: 3rem;
 	font-weight: bold;
 	color: var(--color-primary);
 }
-.about-container .right-about .about-item2 .abt-text .small-text {
+.right__about .about-item2 .text {
 	padding-left: 3rem;
 	position: relative;
 	text-transform: uppercase;
@@ -448,7 +449,7 @@ section {
 	color: var(--color-text);
 	letter-spacing: 2px;
 }
-.about-container .right-about .about-item2 .abt-text .small-text::before {
+.right__about .about-item2 .text::before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -459,32 +460,32 @@ section {
 }
 /*************************************************/
 /*Item3*/
-.about-container .right-about .about-item3 {
-	border: 1px solid var(--color-text);
+.right__about .about-item3 {
+	border: 2px solid var(--color-text);
 	border-radius: 5px;
 	transition: ease 0.4s;
 	box-shadow: var(--box-shadow);
-	background-color: #baebcd;
+	background-color: var(--color-secondary);
 	font-weight: bold;
 }
-.about-container .right-about .about-item3:hover {
+.right__about .about-item3:hover {
 	cursor: default;
 	transform: translateY(-5px);
-	border: 1px solid var(--color-primary);
+	border: 2px solid var(--color-primary);
 	box-shadow: var(--box-shadow);
 	font-weight: bold;
 }
-.about-container .right-about .about-item3 .abt-text {
+.right__about .about-item3 {
 	padding: 1.5rem;
 	display: flex;
 	flex-direction: column;
 }
-.about-container .right-about .about-item3 .abt-text .large-text {
+.right__about .about-item3 .number {
 	font-size: 3rem;
 	font-weight: bold;
 	color: var(--color-primary);
 }
-.about-container .right-about .about-item3 .abt-text .small-text {
+.right__about .about-item3 .text {
 	padding-left: 3rem;
 	position: relative;
 	text-transform: uppercase;
@@ -492,7 +493,7 @@ section {
 	color: var(--color-text);
 	letter-spacing: 2px;
 }
-.about-container .right-about .about-item3 .abt-text .small-text::before {
+.right__about .about-item3 .text::before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -503,32 +504,32 @@ section {
 }
 /*************************************************/
 /*Item4*/
-.about-container .right-about .about-item4 {
-	border: 1px solid var(--color-text);
+.right__about .about-item4 {
+	border: 2px solid var(--color-text);
 	border-radius: 5px;
 	transition: ease 0.4s;
 	box-shadow: var(--box-shadow);
-	background-color: #baebcd;
+	background-color: var(--color-secondary);
 	font-weight: bold;
 }
-.about-container .right-about .about-item4:hover {
+.right__about .about-item4:hover {
 	cursor: default;
 	transform: translateY(-5px);
-	border: 1px solid var(--color-primary);
+	border: 2px solid var(--color-primary);
 	box-shadow: var(--box-shadow);
 	font-weight: bold;
 }
-.about-container .right-about .about-item4 .abt-text {
+.right__about .about-item4 {
 	padding: 1.5rem;
 	display: flex;
 	flex-direction: column;
 }
-.about-container .right-about .about-item4 .abt-text .large-text {
+.right__about .about-item4 .number {
 	font-size: 3rem;
 	font-weight: bold;
 	color: var(--color-primary);
 }
-.about-container .right-about .about-item4 .abt-text .small-text {
+.right__about .about-item4 .text {
 	padding-left: 3rem;
 	position: relative;
 	text-transform: uppercase;
@@ -536,7 +537,7 @@ section {
 	color: var(--color-text);
 	letter-spacing: 2px;
 }
-.about-container .right-about .about-item4 .abt-text .small-text::before {
+.right__about .about-item4 .text::before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -545,15 +546,15 @@ section {
 	height: 2px;
 	background-color: var(--color-text);
 }
-.about-container .left-about {
+.left__about {
 	padding-right: 5rem;
 }
-.about-container .left-about p {
+.left__about p {
 	line-height: 2rem;
 	padding: 1rem;
-	color: var(--color-p);
+	font-weight: bold;
 }
-.about-container .left-about h4 {
+.left__about h4 {
 	font-size: 2rem;
 	text-transform: uppercase;
 }
@@ -637,7 +638,7 @@ section {
 .col img {
 	max-width: 100%;
 	width: 550px;
-	height: auto;
+	height: 500px;
 	object-fit: cover;
 	border-radius: 12px;
 	box-shadow: var(--box-shadow);
@@ -1305,8 +1306,8 @@ footer {
 	width: 100%;
 	padding: 50px 0px;
 	background-image: url(../img/background-footer.svg);
-	background-size: cover;
-	*background-color: var(--color-primary);
+	*background-size: cover;
+	background-color: var(--color-primary);
     -webkit-mask-image: url("../img/background-footer.svg");
     mask-image: url("../img/");
     -webkit-mask-size: cover;
@@ -1326,10 +1327,9 @@ footer {
 	padding: 10px;
 }
 .box__footer h2 {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	color: var(--color-text);
 	font-weight: bold;
-	background-color: var(--color-primary);
 }
 .box__footer a {
 	margin-top: 10px;
@@ -1354,8 +1354,12 @@ footer {
 }
 .box__copyright hr {
 	border: none;
-	height: 1px;
 	background-color: var(--color-text);
+	max-width: 1200px;
+	width: 740px;
+	height: 1px;
+	margin: auto;
+	text-align: center;
 }
 /*************************************************/
 /*----------Mediaqueries----------*/
