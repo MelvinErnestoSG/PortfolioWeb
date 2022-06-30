@@ -8,7 +8,7 @@
 /*Variables*/
 :root {
 	--color-primary: #27ae60;
-	--color-background: #F5F4F6;
+	--color-background: green;
 	--color-text: #000;
 	--box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 	--big-font: 4rem;
@@ -205,13 +205,14 @@ h2, span {
 	margin-bottom: 20px;
 }
 /*************************************************/
-/*media-cover*/
+/*media cover*/
 .media__cover {
-    width: 50%;
+	width: 50%;
 }
 .media__cover video {
-    width: 700px;
-    margin-top: -80px;
+	width: 500px;
+	margin-top: -50px;
+	margin-bottom: -50px;
 }
 /*************************************************/
 /*animation-text*/
@@ -373,7 +374,7 @@ section {
 .about-container .right-about .about-item1 {
 	border: 1px solid var(--color-text);
 	border-radius: 5px;
-	transition: all 0.4s ease-in-out;
+	transition: ease 0.4s;
 	box-shadow: var(--box-shadow);
 	background-color: #baebcd;
 	font-weight: bold;
@@ -417,7 +418,7 @@ section {
 .about-container .right-about .about-item2 {
 	border: 1px solid var(--color-text);
 	border-radius: 5px;
-	transition: all 0.4s ease-in-out;
+	transition: ease 0.4s;
 	box-shadow: var(--box-shadow);
 	background-color: #baebcd;
 	font-weight: bold;
@@ -461,7 +462,7 @@ section {
 .about-container .right-about .about-item3 {
 	border: 1px solid var(--color-text);
 	border-radius: 5px;
-	transition: all 0.4s ease-in-out;
+	transition: ease 0.4s;
 	box-shadow: var(--box-shadow);
 	background-color: #baebcd;
 	font-weight: bold;
@@ -505,7 +506,7 @@ section {
 .about-container .right-about .about-item4 {
 	border: 1px solid var(--color-text);
 	border-radius: 5px;
-	transition: all 0.4s ease-in-out;
+	transition: ease 0.4s;
 	box-shadow: var(--box-shadow);
 	background-color: #baebcd;
 	font-weight: bold;
@@ -558,23 +559,46 @@ section {
 }
 /*************************************************/
 /*Independed components*/
-.button-conteiner {
+.button-container {
 	display: flex;
 	align-self: flex-start;
 	width: 300px;
 }
 .button-content {
-	border-radius: 30px;
+	width: 75%;
+	border-radius: 50px;
 	color: inherit;
 	font-weight: bold;
 	position: relative;
 	border: 1px solid var(--color-text);
+	top: 1px;
+	left: 1px;
+	bottom: 1px;
 	display: flex;
 	align-self: flex-start;
 	align-items: center;
 	overflow: hidden;
 }
-.button-content .button-text {
+.button-content::before {
+	content: "";
+	position: absolute;
+	transform: translateX(100%);
+	transition: ease 0.4s;
+	color: var(--color-text);
+	z-index: -1;
+}
+.button-content:hover {
+	color: var(--color-text);
+	transition: ease 0.4s;
+}
+.button-content:hover::before {
+	width: 100%;
+	height: 100%;
+	background-color: var(--color-primary);
+	transform: translateX(0);
+	transition: ease 0.4s;
+}
+.button-text {
 	color: var(--color-text);
 	display: flex;
 	align-self: center;
@@ -582,7 +606,8 @@ section {
 	font-size: 16px;
 	padding: 0 3rem;
 }
-.button-content .button-icon {
+.button-icon {
+	width: 70%;
 	background-color: var(--color-primary);
 	color: var(--color-text);
 	display: flex;
@@ -591,27 +616,7 @@ section {
 	border-radius: 50%;
 	padding: 1rem;
 }
-.button-content::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 0;
-	transform: translateX(100%);
-	transition: all 0.4s ease-out;
-	color: var(--color-text);
-	z-index: -1;
-}
-.button-content:hover {
-	color: var(--color-text);
-	transition: all 0.4s ease-out;
-}
-.button-content:hover::before {
-	width: 100%;
-	height: 100%;
-	background-color: var(--color-primary);
-	transform: translateX(0);
-	transition: all 0.4s ease-out;
-}
+
 .about-container .left-about p {
 	padding-left: 10px;
 }
@@ -622,7 +627,6 @@ section {
 	grid-template-columns: repeat(auto-fit, minmax(350px, auto));
 	grid-gap: 2rem;
 	align-items: center;
-	margin-top: 5rem;
 	text-align: center;
 	font-weight: bold;
 	cursor: pointer;
@@ -646,7 +650,7 @@ section {
 	top: 0;
 	left: 0;
 	border-radius: 12px;
-	transition: all 0.4s;
+	transition: ease 0.4s;
 }
 .layer:hover {
 	background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, #191919);
@@ -661,7 +665,7 @@ section {
 	left: 50%;
 	transform: translateX(-50%);
 	opacity: 0;
-	transition: all 0.4s;
+	transition: ease 0.4s;
 }
 .layer:hover h3 {
 	bottom: 52%;
@@ -678,7 +682,7 @@ section {
 	left: 50%;
 	transform: translateX(-50%);
 	opacity: 0;
-	transition: all 0.4s;
+	transition: ease 0.4s;
 }
 .layer:hover h5 {
 	bottom: 48%;
@@ -724,7 +728,7 @@ a {
 	flex-direction: column;
 	opacity: 0;
 	transform: scale(0);
-	transition: all 0.4s;
+	transition: ease 0.4s;
 }
 .portfolios .portfolio-item .hover-items h3 {
 	font-size: 1.5rem;
@@ -746,7 +750,7 @@ a {
 	justify-content: center;
 	margin: 0 1rem;
 	cursor: pointer;
-	transition: all 0.4s;
+	transition: ease 0.4s;
 }
 .portfolios .portfolio-item .hover-items .icons .icon i {
 	font-size: 1.5rem;
@@ -773,7 +777,7 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 30px 10px;
+	padding: 5px 10px;
 }
 input[type="radio"] {
 	display: none;
@@ -840,7 +844,6 @@ img {
 	grid-gap: 2rem;
 	align-items: center;
 	font-weight: bold;
-	margin-top: 5rem;
 }
 .row {
 	background-color: #baebcd;
@@ -882,7 +885,7 @@ img {
 	font-weight: bold;
 	margin-bottom: 2px;
 }
-.row:hover h3{
+.row:hover h3 {
 	color: var(--color-text);
 }
 .row h5 {
@@ -891,7 +894,7 @@ img {
 	font-weight: bold;
 	margin-bottom: 19px;
 }
-.row:hover h5{
+.row:hover h5 {
 	color: var(--color-text);
 }
 .row p {
@@ -904,7 +907,11 @@ img {
 	color: var(--color-text);
 	will-change: transform;
 	box-shadow: var(--box-shadow);
-	transform: perspective(1000px) rotateX(4.8deg) rotateY(10.23deg) scale3d(1.05, 1.05, 1.05);
+	transform: 
+	perspective(1000px) 
+	rotateX(4.8deg) 
+	rotateY(10.23deg)
+	scale3d(1.05, 1.05, 1.05);
 }
 /*************************************************/
 /*Sub Servicios*/
@@ -914,9 +921,10 @@ img {
 	grid-gap: 2rem;
 	align-items: center;
 	text-align: center;
+	font-weight: bold;
 }
 .sub-box {
-	background-color: #baebcd;;
+	background-color: #baebcd;
 	border-radius: 12px;
 	box-shadow: var(--box-shadow);
 	padding: 45px 45px 45px 45px;
@@ -948,7 +956,11 @@ img {
 	box-shadow: var(--box-shadow);
 	border-radius: 12px;
 	will-change: transform;
-	transform: perspective(1000px) rotateX(4.8deg) rotateY(10.23deg) scale3d(1.05, 1.05, 1.05);
+	transform: 
+	perspective(1000px) 
+	rotateX(4.8deg) 
+	rotateY(10.23deg)
+	scale3d(1.05, 1.05, 1.05);
 }
 /*************************************************/
 /*Blogs*/
@@ -956,25 +968,27 @@ img {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(220px, auto));
 	grid-gap: 2rem;
-	margin-top: 3rem;
+	align-items: center;
+	text-align: center;
+	font-weight: bold;
 }
 .blogs .blog {
 	position: relative;
 	background-color: #baebcd;
 	border-radius: 5px;
 	box-shadow: var(--box-shadow);
-	transition: all 0.4s;
+	transition: ease 0.4s;
 }
 .blogs .blog:hover {
 	box-shadow: var(--box-shadow);
 	transform: translateY(-5px);
-	transition: all 0.4s;
+	transition: ease 0.4s;
 }
 .blogs .blog:hover img {
 	filter: grayscale(0);
 	transform: scale(1.1);
 	box-shadow: var(--box-shadow);
-	transition: all 0.4s;
+	transition: ease 0.4s;
 }
 .blogs .blog img {
 	width: 100%;
@@ -1041,7 +1055,7 @@ img {
 	width: 0%;
 	background-color: var(--color-primary);
 }
-.progress-bar div span {
+.progress-bar span {
 	height: 40px;
 	width: 40px;
 	border-radius: 50%;
@@ -1097,32 +1111,32 @@ img {
 	border: 2px solid var(--color-text);
 }
 @keyframes html {
-	100%{
+	100% {
 		width: 90%;
 	}
 }
 @keyframes css3 {
-	100%{
+	100% {
 		width: 95%;
 	}
 }
 @keyframes javascript {
-	100%{
+	100% {
 		width: 75%;
 	}
 }
 @keyframes reactjs {
-	100%{
+	100% {
 		width: 90%;
 	}
 }
 @keyframes nodejs {
-	100%{
+	100% {
 		width: 75%;
 	}
 }
 @keyframes python {
-	100%{
+	100% {
 		width: 60%;
 	}
 }
@@ -1132,7 +1146,6 @@ img {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 2rem;
-	padding-bottom: 3rem;
 }
 .timeline .timeline-item {
 	position: relative;
@@ -1211,9 +1224,9 @@ img {
 /*Contactos*/
 .contact {
 	background-color: var(--color-primary);
-	width: 64%;
-	margin: 100px auto;
-	padding: 70px 150px;
+	width: 100%;
+	margin: 10px auto;
+	padding: 10px 150px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1279,81 +1292,71 @@ input::placeholder {
 }
 /*************************************************/
 /*Pie de pagina*/
-.ends {
+.container__footer {
 	text-align: center;
 	padding: 40px;
 	color: var(--color-text);
 }
-.ends p {
+.container__footer p {
 	font-size: 17px;
 	letter-spacing: 1px;
 }
-footer{
-    width: 100%;
-    padding: 50px 0px;
-    background-image: url(../img/background-footer.svg);
-    background-size: cover;
+footer {
+	width: 100%;
+	padding: 50px 0px;
+	background-image: url(../img/background-footer.svg);
+	background-size: cover;
 	background-color: var(--color-primary);
-	
-    /*background-color: #d0f0f8;
+	/*background-color: #d0f0f8;
     -webkit-mask-image: url("../Images/background-footer.svg");
     mask-image: url("../Images/background-footer.svg");
     -webkit-mask-size: cover;
     mask-size: cover;*/
 }
-
-.container__footer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 100px;
+.ends {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 100px;
 }
-
-.box__footer{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
+.box__footer {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
 }
-
-.box__footer h2{
-    margin-bottom: 30px;
-    color: #343434;
-    font-weight: bold;
+.box__footer h2 {
+	margin-bottom: 30px;
+	color: var(--color-text);
+	font-weight: bold;
 	background-color: var(--color-primary);
 }
-
-.box__footer a{
-    margin-top: 10px;
-    color: #7a7a7a;
-    font-weight: bold;
+.box__footer a {
+	margin-top: 10px;
+	color: var(--color-text);
+	font-weight: bold;
 }
-
-.box__footer a:hover{
-    opacity: 0.8;
+.box__footer a:hover {
+	opacity: 0.8;
 }
-
-.box__footer a .fab{
-    font-size: 20px;
+.box__footer a .fab {
+	font-size: 20px;
 }
-
-.box__copyright{
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
-    padding: 0px 40px;
+.box__copyright {
+	max-width: 1200px;
+	margin: auto;
+	text-align: center;
+	padding: 0px 40px;
 }
-
-.box__copyright p{
-    margin-top: 20px;
-    color: #7a7a7a;
+.box__copyright p {
+	margin-top: 20px;
+	color: var(--color-text);
 }
-
-.box__copyright hr{
-    border: none;
-    height: 1px;
-    background-color: #7a7a7a;
+.box__copyright hr {
+	border: none;
+	height: 1px;
+	background-color: var(--color-text);
 }
 /*************************************************/
 /*----------Mediaqueries----------*/
