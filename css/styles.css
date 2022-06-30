@@ -560,7 +560,7 @@ section {
 }
 /*************************************************/
 /*Independed components*/
-.button-container {
+.button__container {
 	display: flex;
 	align-self: flex-start;
 	width: 300px;
@@ -617,8 +617,7 @@ section {
 	border-radius: 50%;
 	padding: 1rem;
 }
-
-.about-container .left-about p {
+.left-about p {
 	padding-left: 10px;
 }
 /*************************************************/
