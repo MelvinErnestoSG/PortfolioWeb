@@ -92,6 +92,7 @@ body::-webkit-scrollbar-thumb {
 	font-weight: bold;
 	cursor: pointer;
 }
+/*************************************************/
 /*.logo img{
 	max-width: 100%;
 	width: 130px;
@@ -637,7 +638,7 @@ section {
 .col img {
 	max-width: 100%;
 	width: 550px;
-	height: 500px;
+	height: 540px;
 	object-fit: cover;
 	border-radius: 12px;
 	box-shadow: var(--box-shadow);
