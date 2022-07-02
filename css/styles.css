@@ -968,7 +968,7 @@ img {
 .blogs {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(220px, auto));
-	grid-gap: 2rem;
+	grid-gap: 2.2rem;
 	align-items: center;
 	text-align: center;
 	font-weight: bold;
@@ -1148,12 +1148,12 @@ img {
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 2rem;
 }
-.timeline .timeline-item {
+.timeline-item {
 	position: relative;
 	padding-left: 3rem;
 	border-left: 1px solid var(--color-primary);
 }
-.timeline .timeline-item .tl-icon {
+.timeline-item .timeline-icon {
 	position: absolute;
 	left: -27px;
 	top: 0;
@@ -1165,17 +1165,17 @@ img {
 	align-items: center;
 	justify-content: center;
 }
-.timeline .timeline-item .tl-icon i {
+.timeline-item .timeline-icon i {
 	font-size: 1.3rem;
 }
-.timeline .timeline-item .tl-icon i:hover {
+.timeline-item .timeline-icon i:hover {
 	background-color: var(--color-text);
 }
-.timeline .timeline-item .tl-icon:hover i {
+.timeline-item .timeline-icon:hover i {
 	color: var(--color-background);
 	background-color: var(--color-primary);
 }
-.timeline .timeline-item .tl-duration {
+.timeline-item .timeline-duration {
 	padding: 0.2rem 0.6rem;
 	background-color: var(--color-primary);
 	border-radius: 15px;
@@ -1184,19 +1184,41 @@ img {
 	text-transform: uppercase;
 	font-weight: bold;
 }
-.timeline .timeline-item h5 {
+.timeline-item h5 {
 	padding: 1rem 0;
 	text-transform: uppercase;
 	font-size: 1.3rem;
 	font-weight: bold;
 }
-.timeline .timeline-item h5 span {
+.timeline-item h5 span {
 	color: var(--color-primary);
 	font-weight: bold;
 	font-size: 1.1rem;
 }
-.timeline .timeline-item p {
+.timeline-item p {
 	color: var(--color-text);
+	font-weight: bold;
+}
+.circle {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: var(--color-primary);
+	top: 105px;
+	left: 16px;
+	display: grid;
+	place-items: center;
+}
+.circle::after {
+	content: ' ';
+	width: 12px;
+	height: 12px;
+	background-color: var(--color-text);
+	border-radius: 50%;
+}
+.circle:hover::after {
+	background-color: var(--color-background);
 }
 /*************************************************/
 /*Social*/
