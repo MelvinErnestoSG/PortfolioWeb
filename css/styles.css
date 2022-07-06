@@ -139,7 +139,7 @@ body {
 	font-weight: bold;
 	padding: 8px 26px;
 	border: 2px solid transparent;
-	transition: ease 0.40s;
+	transition: ease 0.5s;
 }
 .button-container .sign-up{
 	color: var(--text-color);
@@ -614,7 +614,7 @@ section {
 	width: 100%;
 	font-size: 25px;
 	font-weight: bold;
-	color: var(--background-color);
+	color: var(--text-color);
 	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%);
@@ -631,7 +631,7 @@ section {
 	width: 100%;
 	font-size: 22px;
 	font-weight: bold;
-	color: var(--background-color);
+	color: var(--text-color);
 	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%);
@@ -793,18 +793,10 @@ img {
 /*Servicios*/
 .service-content {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+	grid-template-columns: repeat(auto-fit, minmax(330px, auto));
 	grid-gap: 2rem;
 	align-items: center;
 	font-weight: bold;
-}
-.row {
-	background-color: #baebcd;
-	box-shadow: var(--box-shadow);
-	border-radius: 12px;
-	padding: 45px 45px 45px 45px;
-	transition: ease 0.45s;
-	cursor: pointer;
 }
 .service img {
 	height: 65px;
@@ -812,52 +804,55 @@ img {
 	background-color: var(--primary-color);
 	padding: 15px;
 	border-radius: 50%;
-	margin-bottom: 20px;
+	margin-bottom: 12px;
 	box-shadow: var(--box-shadow);
 }
 .service .s-one img {
 	background-color: var(--primary-color);
 	box-shadow: var(--box-shadow);
+	float: right;
 }
 .service .s-two img {
 	background-color: var(--primary-color);
 	box-shadow: var(--box-shadow);
+	float: right;
 }
 .service .s-three img {
 	background-color: var(--primary-color);
 	box-shadow: var(--box-shadow);
+	float: right;
 }
 .service .s-four img {
 	background-color: var(--primary-color);
 	box-shadow: var(--box-shadow);
+	float: right;
 }
-.row h3 {
-	width: 100px;
-	color: var(--text-color);
-	font-size: 1rem;
-	font-weight: bold;
-	margin-bottom: 2px;
+.row {
+	background-color: var(--background-secondary-color);
+	box-shadow: var(--box-shadow);
+	border-radius: 12px;
+	padding: 40px 40px 40px 40px;
+	transition: all 0.5s;
+	cursor: pointer;
 }
-.row:hover h3 {
-	color: var(--text-color);
+.row i {
+	color: var(--primary-color);
+	font-size: 1.8rem;
+	margin-bottom: 12px;
 }
 .row h5 {
 	font-size: 1rem;
-	color: var(--text-color);
+	color: var(--primary-color);
 	font-weight: bold;
-	margin-bottom: 19px;
-}
-.row:hover h5 {
-	color: var(--text-color);
+	margin-bottom: 12px;
 }
 .row p {
 	font-size: 15px;
 	color: var(--text-color);
 	font-weight: bold;
-	line-height: 28px;
+	line-height: 30px;
 }
 .row:hover {
-	color: var(--text-color);
 	will-change: transform;
 	box-shadow: var(--box-shadow);
 	transform: 
@@ -877,7 +872,7 @@ img {
 	font-weight: bold;
 }
 .sub-box {
-	background-color: #baebcd;
+	background-color: var(--background-secondary-color);
 	border-radius: 12px;
 	box-shadow: var(--box-shadow);
 	padding: 45px 45px 45px 45px;
@@ -905,7 +900,7 @@ img {
 	font-weight: bold;
 }
 .sub-box:hover {
-	background-color: #baebcd;
+	background-color: var(--background-secondary-color);
 	box-shadow: var(--box-shadow);
 	border-radius: 12px;
 	will-change: transform;
@@ -930,18 +925,18 @@ img {
 	background-color: var(--background-secondary-color);
 	border-radius: 5px;
 	box-shadow: var(--box-shadow);
-	transition: ease 0.4s;
+	transition: ease 0.5s;
 }
 .blog:hover {
 	box-shadow: var(--box-shadow);
 	transform: translateY(-5px);
-	transition: ease 0.4s;
+	transition: ease 0.5s;
 }
 .blogs .blog:hover img {
 	filter: grayscale(0);
 	transform: scale(1.1);
 	box-shadow: var(--box-shadow);
-	transition: ease 0.4s;
+	transition: ease 0.5s;
 }
 .blog img {
 	width: 100%;
@@ -1159,7 +1154,7 @@ img {
 	border-radius: 20px;
 	border: 2px solid transparent;
 	text-transform: uppercase;
-	transition: ease .30s;
+	transition: all 0.5s;
 	box-shadow: var(--box-shadow);
 }
 .timeline-duration:hover{
@@ -1214,7 +1209,7 @@ img {
 	border-radius: 15px;
 	border: 2px solid transparent;
 	text-transform: uppercase;
-	transition: ease .30s;
+	transition: ease 0.5s;
 	box-shadow: var(--box-shadow);
 }
 .button:hover{
@@ -1461,7 +1456,7 @@ footer {
 		flex-direction: column;
 		background-color: var(--primary-color);
 		text-align: left;
-		transition: all 0.4s;
+		transition: all 0.5s;
 	}
 	.navbar li a {
 		position: relative;
@@ -1553,7 +1548,7 @@ footer {
 	}
 	section {
 		padding: 65px 3%;
-		transition: 0.3s;
+		transition: 0.5s;
 	}
 }
 /*************************************************/
