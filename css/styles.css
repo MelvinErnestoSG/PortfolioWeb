@@ -74,7 +74,7 @@ body {
 /*************************************************/
 /*Menu*/
 #menu-icon {
-	font-size: 30px;
+	font-size: 27px;
 	color: var(--text-color);
 	z-index: 1001;
 	cursor: pointer;
