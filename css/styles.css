@@ -590,8 +590,8 @@ section {
 }
 .col img {
 	max-width: 100%;
-	width: 550px;
-	height: 540px;
+	width: 500px;
+	height: 560px;
 	object-fit: cover;
 	border-radius: 12px;
 	box-shadow: var(--box-shadow);
@@ -604,7 +604,7 @@ section {
 	top: 0;
 	left: 0;
 	border-radius: 12px;
-	transition: ease 0.4s;
+	transition: all 0.4s;
 }
 .layer:hover {
 	background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, #191919);
@@ -619,7 +619,7 @@ section {
 	left: 50%;
 	transform: translateX(-50%);
 	opacity: 0;
-	transition: ease 0.4s;
+	transition: all 0.4s;
 }
 .layer:hover h3 {
 	bottom: 52%;
@@ -636,7 +636,7 @@ section {
 	left: 50%;
 	transform: translateX(-50%);
 	opacity: 0;
-	transition: ease 0.4s;
+	transition: all 0.4s;
 }
 .layer:hover h5 {
 	bottom: 48%;
@@ -658,13 +658,13 @@ a {
 }
 .portfolio-item {
 	position: relative;
-	border-radius: 15px;
+	border-radius: 12px;
 }
 .portfolio-item img {
 	width: 100%;
 	height: 300px;
 	object-fit: cover;
-	border-radius: 15px;
+	border-radius: 12px;
 	box-shadow: var(--box-shadow);
 }
 .portfolio-item .hover-items {
@@ -674,13 +674,13 @@ a {
 	position: absolute;
 	left: 0;
 	top: 0;
-	border-radius: 15px;
+	border-radius: 12px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	opacity: 0;
-	transform: scale(0);
+	transform: scale(0%);
 	transition: ease 0.4s;
 }
 .portfolio-item .hover-items h3 {
@@ -842,12 +842,12 @@ img {
 }
 .row h5 {
 	font-size: 1rem;
-	color: var(--primary-color);
+	color: var(--text-color);
 	font-weight: bold;
 	margin-bottom: 12px;
 }
 .row p {
-	font-size: 15px;
+	font-size: 16px;
 	color: var(--text-color);
 	font-weight: bold;
 	line-height: 30px;
@@ -912,7 +912,7 @@ img {
 }
 /*************************************************/
 /*Blogs*/
-.blogs {
+.blog-content {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
 	grid-gap: 2.2rem;
@@ -932,12 +932,6 @@ img {
 	transform: translateY(-5px);
 	transition: ease 0.5s;
 }
-.blogs .blog:hover img {
-	filter: grayscale(0);
-	transform: scale(1.1);
-	box-shadow: var(--box-shadow);
-	transition: ease 0.5s;
-}
 .blog img {
 	width: 100%;
 	height: 300px;
@@ -945,6 +939,12 @@ img {
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	filter: grayscale(100%);
+}
+.blog-content .blog:hover img {
+	filter: grayscale(0);
+	transform: scale(1.1);
+	box-shadow: var(--box-shadow);
+	transition: ease 0.5s;
 }
 .blog .blog-text {
 	margin-top: -7px;
@@ -1206,7 +1206,7 @@ img {
 	font-weight: bold;
 	background-color: var(--primary-color);
 	padding: 0.2rem 0.6rem;
-	border-radius: 15px;
+	border-radius: 12px;
 	border: 2px solid transparent;
 	text-transform: uppercase;
 	transition: ease 0.5s;
