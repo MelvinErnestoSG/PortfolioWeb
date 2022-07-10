@@ -1463,7 +1463,7 @@ footer {
 		--big-font: 4rem;
 		--h2-font: 2.3rem;
 		--p-font: 1rem;
-		transition: .3s;
+		transition: .2s;
 	}
 }
 /*************************************************/
@@ -1584,7 +1584,7 @@ footer {
 		grid-gap: 1rem;
 	}
 	.Header {
-		grid-template-columns: repeat(1fr 1fr);
+		grid-template-columns: repeat(1, 1fr);
 		grid-gap: 1rem;
 	}
 }
