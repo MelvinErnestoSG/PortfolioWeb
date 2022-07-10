@@ -1,11 +1,11 @@
-const header = document.querySelector("header");
+const header = document.querySelector("Header");
 
 window.addEventListener ("scroll", function() {
 	header.classList.toggle ("sticky", window.scrollY > 0);
 });
 
 let menu = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+let navbar = document.querySelector('.Navbar');
 
 menu.onclick = () => {
 	menu.classList.toggle('bx-x');
@@ -26,4 +26,4 @@ const sr = ScrollReveal ({
 sr.reveal('.home-text',{delay:350, origin:'left'})
 sr.reveal('.home-img',{delay:350, origin:'right'})
 
-sr.reveal('.about,.portfolio,.container__other-portfolios,.container__slider3D,.service,.sub-service,.container__blogs,.container__timeline,.container__skills,.container__contact,.footer',{delay:200, origin:'bottom'})
+sr.reveal('.About,.Portfolios,.Others-Portfolios,.Slider3D,.Services,.Sub-Services,.Blogs,.Skills,.Timeline,.Contacts,.Footer',{delay:200, origin:'bottom'})
