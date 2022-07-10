@@ -178,13 +178,12 @@ body {
 span {
 	color: var(--primary-color);
 }
-.home__content h1{
-	margin: 20px 0px 20px;
+.home__content h1 {
+	margin: 10px 0px 10px;
 	font-size: 60px;
 }
-.home-content h3{
+.home-content h3 {
 	font-size: 25px;
-	margin-bottom: 55px;
 }
 .home-content h4{
 	color: var(--text-color);
