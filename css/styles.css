@@ -137,29 +137,29 @@ body {
 }
 /*************************************************/
 /*Boton*/
-.button__container a{
+.Button__content a{
 	color: var(--text-color);
 	font-weight: bold;
 	padding: 8px 26px;
 	border: 2px solid transparent;
 	transition: ease 0.5s;
 }
-.button__container .sign__up{
+.Button__content .Sign__up{
 	color: var(--text-color);
 	background-color: var(--primary-color);
 	border-radius: 30px;
 }
-.button__container .sign__up:hover {
+.Button__content .Sign__up:hover {
 	background-color: transparent;
 	border: 2px solid var(--primary-color);
 	color: var(--primary-color);
 }
-.button__container .sign__in{
+.Button__content .Sign__in{
 	color: var(--text-color);
 	background-color: var(--primary-color);
 	border-radius: 30px;
 }
-.button__container .sign__in:hover {
+.Button__content .Sign__in:hover {
 	background-color: transparent;
 	border: 2px solid var(--primary-color);
 	color: var(--primary-color);
@@ -1518,7 +1518,7 @@ footer {
 	#menu-icon{
 		display: block;
 	}
-	.sign__up{
+	.Sign__up{
 		display: none;
 	}
 }
@@ -1633,10 +1633,10 @@ footer {
 /*----------Mediaqueries----------*/
 @media screen and (max-width: 700px) {
 	.Skills {
-		grid-template-columns: repeat(1, 1fr);
+		grid-template-columns: 1fr;
 	}
 	.Skills__content .progress__bar {
-		grid-template-columns: repeat(1, 1fr);
+		grid-template-columns: 1fr;
 	}
 	.Timeline {
 		grid-template-columns: repeat(1, 1fr);
