@@ -22,14 +22,16 @@
 			<!--<a href="#" class="logo"><img src="img/logo.png"></a>-->
 			<div class="fa-solid fa-bars" id="menu-icon"></div>
 			<a href="#" class="logo">Lo<span>go</span></a>
-			<ul class="Navbar">
-				<li><i class="fa fa-home"></i><a href="#Home">Home</a></li>
-				<li><i class="fa fa-user"></i><a href="#About">About</a></li>
-				<li><i class="fa fa-briefcase"></i><a href="#Portfolios">Portfolios</a></li>
-				<li><i class="fa fa-certificate"></i><a href="#Services">Services</a></li>
-				<li><i class="fa fa-blog"></i><a href="#Blogs">Blogs</a></li>
-				<li><i class="fa fa-address-card"></i><a href="#Contacts">Contacts</a></li>
-			</ul>
+			<nav class="Nav">
+				<ul class="Navbar">
+					<li><i class="fa fa-home"></i><a href="#Home">home</a></li>
+					<li><i class="fa fa-user"></i><a href="#About">about</a></li>
+					<li><i class="fa fa-briefcase"></i><a href="#Portfolios">portfolios</a></li>
+					<li><i class="fa fa-certificate"></i><a href="#Services">services</a></li>
+					<li><i class="fa fa-blog"></i><a href="#Blogs">Blogs</a></li>
+					<li><i class="fa fa-address-card"></i><a href="#Contacts">contacts</a></li>
+				</ul>
+			</nav>
 			<div class="Button__content">
 				<a href="index.html" class="Sign__up">Sign Up</a>
 				<a href="indice.html" class="Sign__in">Sign In</a>
@@ -48,11 +50,13 @@
 				<h3><span>Vaya</span> más allá de informar cero dudas.</h3>
 				<h3><span>Utilice</span> la inteligencia no lo contrario.</h3>
 				<h3><span>Poder</span> es la declaración de voluntad.</h3>
+
 				<div class="animation__content">
 					<h6>Designer</h6>
 					<h6>Freelancer</h6>
 					<h6>Developer</h6>
 				</div>
+
 				<div class="newslatter__content">
 					<form>
 						<input type="email" name="email" id="mail" placeholder="Enter Your Email" required>
@@ -60,12 +64,39 @@
 					</form>
 				</div>
 			</div>
+
 			<div class="media__cover">
 				<video src="media/animacion_media.mp4" autoplay playinline loop muted preload="auto"></video>
 			</div>
 		</section>
 
-		<section></section>
+		<section class="portfolio" id="portfolio" title="portfolio">
+			<div class="portfolio-content">
+				<div class="box">
+					<img src="img/one.png">
+				</div>
+
+				<div class="box">
+					<img src="img/two.png">
+				</div>
+
+				<div class="box">
+					<img src="img/three.png">
+				</div>
+
+				<div class="box">
+					<img src="img/four.png">
+				</div>
+
+				<div class="box">
+					<img src="img/five.png">
+				</div>
+
+				<div class="box">
+					<img src="img/six.png">
+				</div>
+			</div>
+		</section>
 		
 		<!--------About-------->
 		<section class="About" id="About" title="About">
@@ -73,33 +104,38 @@
 				<div class="Heading">
 					<h2>Ab<span>out</span> Me</h2>
 				</div>
-				<div class="About_up">
+
+				<asideTop class="About_up">
 					<div class="About__item1">
 						<div class="container__number__text"><center><span><i class="fa fa-bell"></i></span></center>
 							<p class="number">650+</p>
 							<p class="text">Projects <br> Completed</p>
 						</div>
 					</div>
+
 					<div class="About__item2">
 						<div class="container__number__text"><center><span><i class="fa fa-briefcase"></i></span></i></center>
 							<p class="number">10+</p>
 							<p class="text">Years of <br> experience</p>
 						</div>
 					</div>
+
 					<div class="About__item3">
 						<div class="container__number__text"><center><span><i class="fa fa-face-smile"></i></span></center>
 							<p class="number">300+</p>
 							<p class="text">Happy <br> Clients</p>
 						</div>
 					</div>
+
 					<div class="About__item4">
 						<div class="container__number__text"><center><span><i class="fa fa-newspaper"></i></span></center>
 							<p class="number">400+</p>
 							<p class="text">Customer <br> reviews</p>
 						</div>
 					</div>
-				</div>
-                <div class="About_bottom">
+				</asideTop>
+
+                <asideBotton class="About_bottom">
 					<p> I am creative and I am love and very passionate and dedicated to my work.<br>
 						I Can Design Anything You Want, and I am very passionate and dedicated to my work.<br>
 						I am an experiented as a professional web developer.<br>
@@ -108,13 +144,15 @@
 						I also make the website interactive with web animations.<br>
 						I am responsive design makes your website accessible to all users, regardless of their device.
 					</p>
+
                     <div class="container__button">
                         <a href="#" class="button__content">
                             <span class="button__text">Download</span>
                             <span class="button__icon"><i class="fas fa-download"></i></span>
                         </a>
                     </div>
-                </div>
+                </asideBotton>
+			</div>
 		</section>
 
 		<!--------Portfolios-------->
@@ -330,7 +368,7 @@
 		</section>
 
 		<!-------Slider-3D----->
-		<section class="slider3D" id="slider3D" title="Slider in 3D">
+		<section class="Slider3D" id="Slider3D" title="Slider 3D">
 			<div class="Heading">
 				<h2>Sli<span>der</span> 3<span>D</span></h2>
 			</div>
@@ -359,7 +397,7 @@
 			<div class="Heading">
 				<h2>Serv<span>ices</span></h2>
 			</div>
-			<div class="Services-content">
+			<div class="Services__content">
 				<div class="row">
 					<div class="Services s-one">
 						<img src="img/anchor.svg">
@@ -404,7 +442,7 @@
 			<div class="Heading">
 				<h2>S<span>u</span>b <span>Serv</span>ices</h2>
 			</div>
-			<div class="items">
+			<div class="Sub-Services__content">
 				<div class="sub-box">
 					<div class="sub-img">
 						<img src="img/target.svg">
@@ -761,7 +799,6 @@
 						<a href="https://www.google.com">IOS Desarrollo</a>
 						<a href="https://www.google.com">Android Desarrollo</a>
 					</div>
-		
 					<div class="box__footer">
 						<h2>Compañia</h2>
 						<a href="#About">Acerca de</a>
@@ -769,7 +806,6 @@
 						<a href="#Timeline">Procesos</a>
 						<a href="#Services">Servicios</a>              
 					</div>
-		
 					<div class="box__footer">
 						<h2>Redes Sociales</h2>
 						<a href="#"><i class="fab fa-facebook-square"></i> Facebook</a>
@@ -786,9 +822,7 @@
 				</marquee></pre>
 			</footer>
 		</section>
-		
 	</container>
-	
 	<!--------js-------->
 	<script src="https://unpkg.com/scrollreveal"></script>
 </body>
