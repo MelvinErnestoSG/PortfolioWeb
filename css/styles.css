@@ -67,16 +67,21 @@ body {
 	transition: .3s;
 }
 /*************************************************/
-/*Imagenes de estadisticas*/
-.portfolio {
+/*Trabajos*/
+.Works {
 	background: var(--background-color);
 }
-.portfolio-content {
+.works .Heading {
+	width: 100%;
+	max-width: 1000px;
+	height: 100%;
+	max-height: 50px;
+}
+.Works__content {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(370px, auto));
 	grid-gap: 2rem;
 	align-items: center;
-	/*margin-top: 2.5rem;*/
 	cursor: pointer;
 }
 .box img {
@@ -139,7 +144,9 @@ body {
 	display: inline-block;
 }
 .Nav ul li a {
+	color: var(--text-color);
 	text-transform: capitalize;
+	font-weight: bold;
 }
 /*************************************************/
 /*Barra de navegación hijo*/
@@ -152,8 +159,6 @@ body {
 }
 .Navbar a {
 	font-size: 1.1rem;
-	color: var(--text-color);
-	font-weight: bold;
 	padding: 10px 26px;
 }
 .Navbar a:hover {
@@ -167,36 +172,36 @@ body {
 	background-color: var(--primary-color);
 	bottom: -3px;
 	left: 0;
-	transition: ease 0.4s;
+	transition: ease .4s;
 }
 .Navbar a:hover::after {
 	width: 80%;
 }
 /*************************************************/
 /*Boton*/
-.Button__content a{
+.Button__content__up a{
 	color: var(--text-color);
 	font-weight: bold;
 	padding: 8px 26px;
 	border: 2px solid transparent;
 	transition: ease 0.5s;
 }
-.Button__content .Sign__up{
+.Button__content__up .Sign__up{
 	color: var(--text-color);
 	background-color: var(--primary-color);
 	border-radius: 30px;
 }
-.Button__content .Sign__up:hover {
+.Button__content__up .Sign__up:hover {
 	background-color: transparent;
 	border: 2px solid var(--primary-color);
 	color: var(--primary-color);
 }
-.Button__content .Sign__in{
+.Button__content__up .Sign__in{
 	color: var(--text-color);
 	background-color: var(--primary-color);
 	border-radius: 30px;
 }
-.Button__content .Sign__in:hover {
+.Button__content__up .Sign__in:hover {
 	background-color: transparent;
 	border: 2px solid var(--primary-color);
 	color: var(--primary-color);
@@ -232,28 +237,28 @@ span {
 }
 /*************************************************/
 /*media cover*/
-.media__cover {
+.Media__cover {
 	width: 100%;
 }
-.media__cover video {
+.Media__cover video {
 	max-width: 500px;
 	margin-top: -50px;
 	margin-bottom: -50px;
 }
 /*************************************************/
 /*animación*/
-.Home__content .animation__content {
+.Home__content .Animation__content {
 	position: relative;
 	height: 40px;
 	overflow: hidden;
 }
-.Home__content .animation__content h6 {
+.Home__content .Animation__content h6 {
 	font-size: 35px;
 	font-weight: bold;
 	line-height: 50px;
 	color: var(--primary-color);
 }
-.Home__content .animation__content h6:nth-child(1) {
+.Home__content .Animation__content h6:nth-child(1) {
 	animation: text-move 10s infinite;
 }
 @keyframes text-move {
@@ -275,12 +280,12 @@ span {
 }
 /*************************************************/
 /*Pequeño Formulario*/
-.newslatter__content form {
+.Newslatter__content form {
 	position: relative;
 	max-width: 100%;
 	width: 380px;
 }
-.newslatter__content form input:first-child {
+.Newslatter__content form input:first-child {
 	display: inline-block;
 	width: 100%;
 	outline: none;
@@ -288,7 +293,7 @@ span {
 	border: 2px solid var(--primary-color);
 	border-radius: 30px;
 }
-.newslatter__content form input:last-child {
+.Newslatter__content form input:last-child {
 	position: absolute;
 	display: inline-block;
 	font-weight: bold;
@@ -353,14 +358,14 @@ section {
 }
 /*************************************************/
 /*Acerca arriba*/
-.About_up {
+.About__up {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 1rem;
 }
 /*************************************************/
 /*Articulo 1*/
-.About_up .About__item1 {
+.About__up .About__item1 {
 	background-color: var(--background-secondary-color);
 	border: 2px solid var(--text-color);
 	box-shadow: var(--box-shadow);
@@ -368,24 +373,24 @@ section {
 	font-weight: bold;
 	transition: ease 0.4s;
 }
-.About_up .About__item1:hover {
+.About__up .About__item1:hover {
 	border: 2px solid var(--primary-color);
 	box-shadow: var(--box-shadow);
 	transform: translateY(-5px);
 	font-weight: bold;
 	cursor: default;
 }
-.About_up .About__item1 {
+.About__up .About__item1 {
 	display: flex;
 	flex-direction: column;
 	padding: 1.5rem;
 }
-.About_up .About__item1 .number {
+.About__up .About__item1 .Number {
 	color: var(--primary-color);
 	font-size: 3rem;
 	font-weight: bold;
 }
-.About_up .About__item1 .text {
+.About__up .About__item1 .Text {
 	color: var(--text-color);
 	font-size: 1.2rem;
 	padding-left: 3rem;
@@ -393,7 +398,7 @@ section {
 	position: relative;
 	text-transform: uppercase;
 }
-.About_up .About__item1 .text::before {
+.About__up .About__item1 .Text::before {
 	content: "";
 	position: absolute;
 	background-color: var(--text-color);
@@ -404,32 +409,32 @@ section {
 }
 /*************************************************/
 /*Articulo 2*/
-.About_up .About__item2 {
+.About__up .About__item2 {
 	background-color: var(--background-secondary-color);
 	border: 2px solid var(--text-color);
 	box-shadow: var(--box-shadow);
 	border-radius: 5px;
 	font-weight: bold;
-	transition: ease 0.4s;
+	transition: ease .4s;
 }
-.About_up .About__item2:hover {
+.About__up .About__item2:hover {
 	border: 2px solid var(--primary-color);
 	box-shadow: var(--box-shadow);
 	transform: translateY(-5px);
 	font-weight: bold;
 	cursor: default;
 }
-.About_up .About__item2 {
+.About__up .About__item2 {
 	display: flex;
 	flex-direction: column;
 	padding: 1.5rem;
 }
-.About_up .About__item2 .number {
+.About__up .About__item2 .Number {
 	color: var(--primary-color);
 	font-size: 3rem;
 	font-weight: bold;
 }
-.About_up .About__item2 .text {
+.About__up .About__item2 .Text {
 	color: var(--text-color);
 	font-size: 1.2rem;
 	padding-left: 3rem;
@@ -437,7 +442,7 @@ section {
 	position: relative;
 	text-transform: uppercase;
 }
-.About_up .About__item2 .text::before {
+.About__up .About__item2 .Text::before {
 	content: "";
 	position: absolute;
 	background-color: var(--text-color);
@@ -448,32 +453,32 @@ section {
 }
 /*************************************************/
 /*Articulo 3*/
-.About_up .About__item3 {
+.About__up .About__item3 {
 	background-color: var(--background-secondary-color);
 	border: 2px solid var(--text-color);
 	box-shadow: var(--box-shadow);
 	border-radius: 5px;
 	font-weight: bold;
-	transition: ease 0.4s;
+	transition: ease .4s;
 }
-.About_up .About__item3:hover {
+.About__up .About__item3:hover {
 	border: 2px solid var(--primary-color);
 	box-shadow: var(--box-shadow);
 	transform: translateY(-5px);
 	font-weight: bold;
 	cursor: default;
 }
-.About_up .About__item3 {
+.About__up .About__item3 {
 	display: flex;
 	flex-direction: column;
 	padding: 1.5rem;
 }
-.About_up .About__item3 .number {
+.About__up .About__item3 .Number {
 	color: var(--primary-color);
 	font-size: 3rem;
 	font-weight: bold;
 }
-.About_up .About__item3 .text {
+.About__up .About__item3 .Text {
 	color: var(--text-color);
 	font-size: 1.2rem;
 	padding-left: 3rem;
@@ -481,7 +486,7 @@ section {
 	position: relative;
 	text-transform: uppercase;
 }
-.About_up .About__item3 .text::before {
+.About__up .About__item3 .Text::before {
 	content: "";
 	position: absolute;
 	background-color: var(--text-color);
@@ -492,32 +497,32 @@ section {
 }
 /*************************************************/
 /*Articulo 4*/
-.About_up .About__item4 {
+.About__up .About__item4 {
 	background-color: var(--background-secondary-color);
 	border: 2px solid var(--text-color);
 	box-shadow: var(--box-shadow);
 	border-radius: 5px;
 	font-weight: bold;
-	transition: ease 0.4s;
+	transition: ease .4s;
 }
-.About_up .About__item4:hover {
+.About__up .About__item4:hover {
 	border: 2px solid var(--primary-color);
 	box-shadow: var(--box-shadow);
 	transform: translateY(-5px);
 	font-weight: bold;
 	cursor: default;
 }
-.About_up .About__item4 {
+.About__up .About__item4 {
 	display: flex;
 	flex-direction: column;
 	padding: 1.5rem;
 }
-.About_up .About__item4 .number {
+.About__up .About__item4 .Number {
 	color: var(--primary-color);
 	font-size: 3rem;
 	font-weight: bold;
 }
-.About_up .About__item4 .text {
+.About__up .About__item4 .Text {
 	color: var(--text-color);
 	font-size: 1.2rem;
 	padding-left: 3rem;
@@ -525,7 +530,7 @@ section {
 	position: relative;
 	text-transform: uppercase;
 }
-.About_up .About__item4 .text::before {
+.About__up .About__item4 .Text::before {
 	content: "";
 	position: absolute;
 	background-color: var(--text-color);
@@ -534,26 +539,26 @@ section {
 	width: 2rem;
 	height: 2px;
 }
-.About_bottom {
+.About__bottom {
 	padding-right: 5rem;
 }
-.About_bottom p {
+.About__bottom p {
 	line-height: 2rem;
 	margin-top: 5px;
 	font-weight: bold;
 }
-.About_bottom h4 {
+.About__bottom h4 {
 	font-size: 2rem;
 	text-transform: uppercase;
 }
 /*************************************************/
 /*Componentes del boton con barra que muestra una descarga por dentro*/
-.container__button {
+.Container__button {
 	display: flex;
 	align-self: flex-start;
 	width: 300px;
 }
-.button__content {
+.Button__content__down {
 	position: relative;
 	display: flex;
 	align-self: flex-start;
@@ -569,7 +574,7 @@ section {
 	bottom: 1px;
 	overflow: hidden;
 }
-.button__content::before {
+.Button__content__down::before {
 	content: "";
 	position: absolute;
 	transform: translateX(100%);
@@ -577,18 +582,18 @@ section {
 	color: var(--text-color);
 	z-index: -1;
 }
-.button__content:hover {
+.Button__content__down:hover {
 	color: var(--text-color);
 	transition: ease .4s;
 }
-.button__content:hover::before {
+.Button__content__down:hover::before {
 	width: 100%;
 	height: 100%;
 	background-color: var(--primary-color);
 	transform: translateX(0);
 	transition: ease .4s;
 }
-.button__text {
+.Botton_text {
 	color: var(--text-color);
 	display: flex;
 	align-self: center;
@@ -596,7 +601,7 @@ section {
 	font-size: 16px;
 	padding: 0 3rem;
 }
-.button__icon {
+.Botton_icon {
 	width: 70%;
 	background-color: var(--primary-color);
 	color: var(--text-color);
@@ -606,7 +611,7 @@ section {
 	border-radius: 50%;
 	padding: 1rem;
 }
-.left-About p {
+.About__bottom p {
 	padding-left: 10px;
 }
 /*************************************************/
@@ -1642,7 +1647,7 @@ footer {
 		grid-template-columns: repeat(1, 1fr);
 		grid-gap: 1rem;
 	}
-	.newslatter__content{
+	.Newslatter__content{
 		grid-template-columns: 1fr;
 		min-height: 20vh;
 		grid-gap: 1rem;
@@ -1664,7 +1669,7 @@ footer {
 	.Home__content {
 		padding-top: 55px;
 	}
-	.media__cover {
+	.Media__cover {
 		display: none;
 	}
 	.About__content {
@@ -1685,11 +1690,11 @@ footer {
 	.About {
 		grid-template-columns: 1fr;
 	}
-	.About_up {
+	.About__up {
 		grid-template-columns: repeat(2, 4fr);
 		text-align: center;
 	}
-	.About_up p {
+	.About__up p {
 		font-size: 1.4rem;
 	}
 }
