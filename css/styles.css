@@ -114,18 +114,18 @@ body {
 }
 /*************************************************/
 /*Logo*/
-.logo {
+.Logo {
 	color: var(--text-color);
 	font-size: 1.9rem;
 	letter-spacing: 1px;
 	font-weight: bold;
 	cursor: pointer;
 }
-.logo span a {
+.Logo span a {
 	background-color: var(--background-color);
 }
 /*************************************************/
-/*.logo img{
+/*.Logo img{
 	max-width: 100%;
 	width: 130px;
 	height: auto;
@@ -616,13 +616,13 @@ section {
 }
 /*************************************************/
 /*Portafolio*/
-.portfolios .Heading {
+.Portfolios .Heading {
 	width: 100%;
 	max-width: 1000px;
 	height: 100%;
 	max-height: 50px;
 }
-.portfolio__content {
+.Portfolio__content {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(350px, auto));
 	grid-gap: 2rem;
@@ -631,10 +631,10 @@ section {
 	font-weight: bold;
 	cursor: pointer;
 }
-.column {
+.Column {
 	position: relative;
 }
-.column img {
+.Column img {
 	max-width: 100%;
 	width: 500px;
 	height: 560px;
@@ -642,7 +642,7 @@ section {
 	border-radius: 12px;
 	box-shadow: var(--box-shadow);
 }
-.layer {
+.Layer {
 	position: absolute;
 	background-color: transparent;
 	height: 100%;
@@ -652,10 +652,10 @@ section {
 	border-radius: 12px;
 	transition: all .4s;
 }
-.layer:hover {
+.Layer:hover {
 	background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, #191919);
 }
-.layer h3 {
+.Layer h3 {
 	position: absolute;
 	width: 100%;
 	font-size: 25px;
@@ -667,12 +667,12 @@ section {
 	opacity: 0;
 	transition: all .4s;
 }
-.layer:hover h3 {
+.Layer:hover h3 {
 	bottom: 52%;
 	opacity: 1;
 	font-weight: bold;
 }
-.layer h5 {
+.Layer h5 {
 	position: absolute;
 	width: 100%;
 	font-size: 22px;
@@ -684,14 +684,14 @@ section {
 	opacity: 0;
 	transition: all .4s;
 }
-.layer:hover h5 {
+.Layer:hover h5 {
 	bottom: 48%;
 	opacity: 1;
 	font-weight: bold;
 }
 /*************************************************/
 /*Otros Portafolios*/
-.others-portfolios .Heading {
+.Others__Portfolios .Heading {
 	width: 100%;
 	max-width: 1000px;
 	height: 100%;
@@ -1438,38 +1438,38 @@ footer {
 	margin-top: 100px;
 	box-shadow: var(--box-shadow);
 }
-.box__footer {
+.Footer__box {
 	display: flex;
 	flex-direction: column;
 	padding: 10px;
 }
-.box__footer h2 {
+.Footer__box h2 {
 	margin-bottom: 20px;
 	color: var(--text-color);
 	font-weight: bold;
 }
-.box__footer a {
+.Footer__box a {
 	margin-top: 10px;
 	color: var(--text-color);
 	font-weight: bold;
 }
-.box__footer a:hover {
+.Footer__box a:hover {
 	opacity: 0.8;
 }
-.box__footer a .fab {
+.Footer__box a .fab {
 	font-size: 20px;
 }
-.box__copyright {
+.Copyright__box {
 	max-width: 1200px;
 	margin: auto;
 	text-align: center;
 	padding: 0px 40px;
 }
-.box__copyright p {
+.Copyright__box p {
 	margin-top: 20px;
 	color: var(--text-color);
 }
-.box__copyright hr {
+.Copyright__box hr {
 	border: none;
 	background-color: var(--text-color);
 	max-width: 1200px;
@@ -1493,16 +1493,48 @@ footer {
 		padding: 10px 3%;
 		transition: .2s;
 	}
+	.Home {
+		height: 80vh;
+	}
+	.Home__content {
+		font-size: 1.2rem;
+	}
+	#menu-icon{
+		display: initial;
+	}
+	h2 span {
+		font-size: 4rem;
+	}
+	h2 {
+		font-size: 4.5rem;
+	}
+	.About__content {
+		grid-template-columns: repeat(2, 1fr);
+	}
 	section {
 		padding: 140px 3%;
 		transition: .2s;
+	}
+	.Sign__up {
+		display: none;
+	}
+	.others__portfolios__content {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.blog__content {
+		grid-template-columns: repeat(2, 1fr);
 	}
 	.contacts__content {
 		width: 95%;
 		transition: .2s;
 	}
-	.footer__content h2{
+	.Footer__content h2 {
 		font-size: x-large;
+		text-align: center;
+	}
+	.Footer__box a {
+		text-align: center;
+		align-items: center;
 	}
 	:root {
 		--big-font: 4rem;
@@ -1513,87 +1545,12 @@ footer {
 }
 /*************************************************/
 /*----------Mediaqueries----------*/
-@media (max-width: 1380px) {
+@media (max-width: 990px) {
 	.Container-flex-media {
-		padding: 1rem 2rem;
+		padding: 1rem 1rem;
 	}
-	.Header {
-		padding: 18px 2%;
-		transition: .2s;
-	}
-	section {
-		padding: 80px 2%;
-		transition: .2s;
-	}
-	.Home__content{
-		font-size: 1.2rem;
-	}
-	:root {
-		--big-font: 4.7rem;
-		--h2-font: 2.5rem;
-		--p-font: 1rem;
-		transition: .2s;
-	}
-}
-/*************************************************/
-/*----------Mediaqueries----------*/
-@media screen and (max-width: 1070px) {
-	.Container-flex-media {
-		padding: 1rem 2rem;
-	}
-	.About__content {
-		grid-template-columns: repeat(1, 1fr);
-	}
-	.About__content .right-About {
-		padding-top: 2.5rem;
-	}
-	h2 span {
-		font-size: 4rem;
-	}
-	h2 {
-		font-size: 4.5rem;
-	}
-	.footer__content h2{
-		font-size: x-large;
-	}
-}
-/*************************************************/
-/*----------Mediaqueries----------*/
-@media screen and (max-width: 1120px) {
-	.Container-flex-media {
-		padding: 1rem 2rem;
-	}
-	.Header {
-		padding: 14px 2%;
-	}
-	.Home {
-		height: 80vh;
-	}
-	#menu-icon{
-		display: block;
-	}
-	.Sign__up{
-		display: none;
-	}
-}
-/*************************************************/
-/*----------Mediaqueries----------*/
-@media screen and (max-width: 1250px) {
-	.Container-flex-media {
-		padding: 1rem 2rem;
-	}
-	.blog__content {
-		grid-template-columns: repeat(2, 1fr);
-	}
-	.others__portfolios__content {
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
-/*************************************************/
-/*----------Mediaqueries----------*/
-@media (max-width: 970px) {
-	.Container-flex-media {
-		padding: 1rem 2rem;
+	.Logo {
+		margin-right: -50%;
 	}
 	#menu-icon {
 		display: block;
@@ -1632,62 +1589,39 @@ footer {
 	.Navbar.active {
 		top: 100%;
 	}
-}
-/*************************************************/
-/*----------Mediaqueries----------*/
-@media screen and (max-width: 990px) {
-	.Container-flex-media {
-		padding: 1rem 2rem;
-	}
 	.About__content {
 		padding-right: 1rem;
-		grid-gap: 1rem;
 	}
 	.Header {
 		grid-template-columns: repeat(1, 1fr);
-		grid-gap: 1rem;
-	}
-	.Newslatter__content{
-		grid-template-columns: 1fr;
-		min-height: 20vh;
-		grid-gap: 1rem;
 	}
 	.box img {
 		max-width: 100%;
 		width: 760px;
 		height: auto;
 	}
-}
-/*************************************************/
-/*----------Mediaqueries----------*/
-@media (max-width: 800px) {
 	.Home {
 		grid-template-columns: 1fr;
 		min-height: 150vh;
-		grid-gap: 1rem;
 	}
 	.Home__content {
 		padding-top: 55px;
 	}
+	.Newslatter__content {
+		grid-template-columns: 1fr;
+		min-height: 70vh;
+	}
 	.Media__cover {
 		display: none;
-	}
-	.About__content {
-		grid-template-columns: 1fr;
-	}
-	:root {
-		--big-font: 3.4rem;
-		--h2-font: 2rem;
 	}
 	section {
 		padding: 65px 3%;
 		transition: .2s;
 	}
-}
-/*************************************************/
-/*----------Mediaqueries----------*/
-@media screen and (max-width: 770px) {
 	.About {
+		grid-template-columns: 1fr;
+	}
+	.About__content {
 		grid-template-columns: 1fr;
 	}
 	.About__up {
@@ -1697,10 +1631,15 @@ footer {
 	.About__up p {
 		font-size: 1.4rem;
 	}
-}
-/*************************************************/
-/*----------Mediaqueries----------*/
-@media screen and (max-width: 700px) {
+	.blog__content {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.Portfolio__content {
+		grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+	}
+	.others__portfolios__content {
+		grid-template-columns: repeat(1, 1fr);
+	}
 	.Skills {
 		grid-template-columns: 1fr;
 	}
@@ -1710,15 +1649,10 @@ footer {
 	.Timeline {
 		grid-template-columns: repeat(1, 1fr);
 	}
-}
-/*************************************************/
-/*----------Mediaqueries----------*/
-@media screen and (max-width: 660px) {
-	.blog__content {
-		grid-template-columns: repeat(1, 1fr);
-	}
-	.others__portfolios__content {
-		grid-template-columns: repeat(1, 1fr);
+	:root {
+		--big-font: 3.4rem;
+		--h2-font: 2rem;
+		transition: .2s;
 	}
 }
 /*************************************************/
