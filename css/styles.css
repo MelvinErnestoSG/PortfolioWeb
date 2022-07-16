@@ -3,6 +3,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: "Poppins", "Jost", sans-serif;
 	scroll-behavior: smooth;
 	scroll-padding-top: 3.5rem;
 }
@@ -21,7 +22,6 @@
 /*************************************************/
 /*Cuerpo*/
 body {
-	font-family: "Jost", sans-serif;
 	background-color: var(--background-color);
 	color: var(--text-color);
 }
@@ -64,14 +64,14 @@ body {
 	color: var(--primary-color);
 	padding: 12px 5%;
 	cursor: pointer;
-	transition: .3s;
+	transition: .5s;
 }
 /*************************************************/
 /*Trabajos*/
 .Works {
 	background: var(--background-color);
 }
-.works .Heading {
+.Works .Title {
 	width: 100%;
 	max-width: 1000px;
 	height: 100%;
@@ -84,14 +84,15 @@ body {
 	align-items: center;
 	cursor: pointer;
 }
-.box img {
+.Box img {
 	max-width: 100%;
 	width: auto;
 	border-radius: 10px;
 	margin-bottom: 20px;
-	transition: all .30s;
+	box-shadow: var(--box-shadow);
+	transition: .5s;
 }
-.box img:hover {
+.Box img:hover {
 	transform: scale(1.1);
 }
 /*************************************************/
@@ -118,6 +119,7 @@ body {
 	color: var(--text-color);
 	font-size: 1.9rem;
 	letter-spacing: 1px;
+	text-transform: capitalize;
 	font-weight: bold;
 	cursor: pointer;
 }
@@ -139,12 +141,13 @@ body {
 	padding-right: 10%;
 }
 .Nav ul li {
-	/*text-decoration: none;*/
-	list-style-type: none;
 	display: inline-block;
 }
 .Nav ul li a {
 	color: var(--text-color);
+	/*list-style-type: none;*/
+	/*list-style: none*/
+	/*text-decoration: none;*/
 	text-transform: capitalize;
 	font-weight: bold;
 }
@@ -165,28 +168,29 @@ body {
 	color: var(--primary-color);
 }
 .Navbar a::after {
-	content: "";
+	content: '';
 	position: absolute;
 	width: 0;
-	height: 2px;
+	height: 3px;
 	background-color: var(--primary-color);
-	bottom: -3px;
+	bottom: -2px;
 	left: 0;
-	transition: ease .4s;
+	transition: .5s;
 }
 .Navbar a:hover::after {
 	width: 80%;
 }
 /*************************************************/
 /*Boton*/
-.Button__content__up a{
+.Button__content__up a {
 	color: var(--text-color);
 	font-weight: bold;
-	padding: 8px 26px;
+	padding: 8px 24px;
+	text-transform: capitalize;
 	border: 2px solid transparent;
-	transition: ease 0.5s;
+	transition: .5s;
 }
-.Button__content__up .Sign__up{
+.Button__content__up .Sign__up {
 	color: var(--text-color);
 	background-color: var(--primary-color);
 	border-radius: 30px;
@@ -211,9 +215,9 @@ body {
 .Home {
 	height: 100vh;
 	width: 100%;
-	position: relative;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+	position: relative;
 	grid-gap: 4rem;
 	align-items: center;
 	background-size: cover;
@@ -227,12 +231,12 @@ span {
 	margin: 10px 0px 10px;
 	font-size: 60px;
 }
-.Home-content h3 {
-	font-size: 25px;
-}
-.Home-content h4{
-	color: var(--text-color);
+.Home__content h3 {
 	font-size: 20px;
+}
+.Home__content h4{
+	color: var(--text-color);
+	font-size: 15px;
 	letter-spacing: 2px;
 }
 /*************************************************/
@@ -314,29 +318,29 @@ section {
 }
 /*************************************************/
 /*Titulos cabecera para cada clase*/
-.Heading {
+.Title {
 	text-align: center;
 	align-items: center;
 	background-position: center;
 }
-.Heading h2 {
+.Title h2 {
 	font-size: 32px;
 	font-weight: bold;
 	margin: 7px 0px 20px;
 	line-height: 1.1;
 }
-.Heading h3 {
+.Title h3 {
 	color: var(--primary-color);
 	font-size: 20px;
 	font-weight: bold;
 }
-.Heading p {
+.Title p {
 	font-size: 15px;
 	color: var(--text-color);
 	font-weight: bold;
 	line-height: 28px;
 }
-.Heading h2 span {
+.Title h2 span {
 	font-size: 32px;
 	color: var(--primary-color);
 }
@@ -347,7 +351,7 @@ section {
 	grid-template-columns: repeat(1, 1fr);
 	align-items: center;
 }
-.About .Heading {
+.About .Title {
 	width: 100%;
 	max-width: 1000px;
 	padding-bottom: 10px;
@@ -371,7 +375,7 @@ section {
 	box-shadow: var(--box-shadow);
 	border-radius: 5px;
 	font-weight: bold;
-	transition: ease 0.4s;
+	transition: .5s;
 }
 .About__up .About__item1:hover {
 	border: 2px solid var(--primary-color);
@@ -415,7 +419,7 @@ section {
 	box-shadow: var(--box-shadow);
 	border-radius: 5px;
 	font-weight: bold;
-	transition: ease .4s;
+	transition: .5s;
 }
 .About__up .About__item2:hover {
 	border: 2px solid var(--primary-color);
@@ -459,7 +463,7 @@ section {
 	box-shadow: var(--box-shadow);
 	border-radius: 5px;
 	font-weight: bold;
-	transition: ease .4s;
+	transition: .5s;
 }
 .About__up .About__item3:hover {
 	border: 2px solid var(--primary-color);
@@ -503,7 +507,7 @@ section {
 	box-shadow: var(--box-shadow);
 	border-radius: 5px;
 	font-weight: bold;
-	transition: ease .4s;
+	transition: .5s;
 }
 .About__up .About__item4:hover {
 	border: 2px solid var(--primary-color);
@@ -577,21 +581,21 @@ section {
 .Button__content__down::before {
 	content: "";
 	position: absolute;
-	transform: translateX(100%);
-	transition: ease .4s;
 	color: var(--text-color);
+	transform: translateX(100%);
 	z-index: -1;
+	transition: .5s;
 }
 .Button__content__down:hover {
 	color: var(--text-color);
-	transition: ease .4s;
+	transition: .5s;
 }
 .Button__content__down:hover::before {
 	width: 100%;
 	height: 100%;
 	background-color: var(--primary-color);
 	transform: translateX(0);
-	transition: ease .4s;
+	transition: .5s;
 }
 .Botton_text {
 	color: var(--text-color);
@@ -616,7 +620,7 @@ section {
 }
 /*************************************************/
 /*Portafolio*/
-.Portfolios .Heading {
+.Portfolios .Title {
 	width: 100%;
 	max-width: 1000px;
 	height: 100%;
@@ -650,7 +654,7 @@ section {
 	top: 0;
 	left: 0;
 	border-radius: 12px;
-	transition: all .4s;
+	transition: .5s;
 }
 .Layer:hover {
 	background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, #191919);
@@ -665,7 +669,7 @@ section {
 	left: 50%;
 	transform: translateX(-50%);
 	opacity: 0;
-	transition: all .4s;
+	transition: .5s;
 }
 .Layer:hover h3 {
 	bottom: 52%;
@@ -682,7 +686,7 @@ section {
 	left: 50%;
 	transform: translateX(-50%);
 	opacity: 0;
-	transition: all .4s;
+	transition: .5s;
 }
 .Layer:hover h5 {
 	bottom: 48%;
@@ -691,7 +695,7 @@ section {
 }
 /*************************************************/
 /*Otros Portafolios*/
-.Others__Portfolios .Heading {
+.Others__portfolios .Title {
 	width: 100%;
 	max-width: 1000px;
 	height: 100%;
@@ -703,23 +707,23 @@ a {
 	color: inherit;
 	font-family: inherit;
 }
-.others__portfolios__content {
+.Others__portfolios__content {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(350px, auto));
 	grid-gap: 2rem;
 }
-.portfolio__item__content {
+.Portfolio__item__content {
 	position: relative;
 	border-radius: 12px;
 }
-.portfolio__item__content img {
+.Portfolio__item__content img {
 	width: 100%;
 	height: 300px;
 	object-fit: cover;
 	border-radius: 12px;
 	box-shadow: var(--box-shadow);
 }
-.portfolio__item__content .hover__items {
+.Portfolio__item__content .Hover__items {
 	width: 100%;
 	height: 100%;
 	background-color: var(--primary-color);
@@ -733,19 +737,19 @@ a {
 	flex-direction: column;
 	opacity: 0;
 	transform: scale(0%);
-	transition: ease .4s;
+	transition: .5s;
 }
-.portfolio__item__content .hover__items h3 {
+.Portfolio__item__content .Hover__items h3 {
 	font-size: 1.5rem;
 	color: var(--text-color);
 	margin-bottom: 1.5rem;
 }
-.portfolio__item__content .hover__items .icons {
+.Portfolio__item__content .Hover__items .Icons {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.portfolio__item__content .hover__items .icons .icon {
+.Portfolio__item__content .Hover__items .Icons .icon {
 	background-color: var(--text-color);
 	border-radius: 50%;
 	width: 50px;
@@ -755,33 +759,33 @@ a {
 	justify-content: center;
 	margin: 0 1rem;
 	cursor: pointer;
-	transition: ease .4s;
+	transition: .5s;
 }
-.portfolio__item__content .hover__items .icons .icon i {
+.Portfolio__item__content .Hover__items .Icons .icon i {
 	font-size: 1.5rem;
 	color: var(--background-color);
 	margin: 0 1rem;
 }
-.portfolio__item__content .hover__items .icons .icon:hover {
+.Portfolio__item__content .Hover__items .Icons .icon:hover {
 	background-color: var(--background-color);
 	border: 2px solid var(--text-color);
 }
-.portfolio__item__content .hover__items .icons .icon:hover i {
+.Portfolio__item__content .Hover__items .Icons .icon:hover i {
 	color: var(--text-color);
 }
-.portfolio__item__content:hover .hover__items {
+.Portfolio__item__content:hover .Hover__items {
 	opacity: 1;
 	transform: scale(1);
 }
 /*************************************************/
 /*Portafolio Slider 3D*/
-.Slider3D .Heading {
+.Slider3D .Title {
 	width: 100%;
 	max-width: 1000px;
 	height: 100%;
 	max-height: 5%;
 }
-.container__slider {
+.Container__slider {
 	max-width: 1000px;
 	height: 500px;
 	margin: auto;
@@ -793,7 +797,7 @@ a {
 input[type="radio"] {
 	display: none;
 }
-.slider__content {
+.Slider__content {
 	width: 100%;
 	max-width: 800px;
 	height: 100%;
@@ -803,12 +807,12 @@ input[type="radio"] {
 	justify-content: center;
 	align-items: center;
 }
-.cards {
+.Cards {
 	position: relative;
 	width: 100%;
 	height: 100%;
 }
-.card {
+.Card {
 	position: absolute;
 	width: 60%;
 	height: 100%;
@@ -827,29 +831,29 @@ img {
 	-o-object-fit: cover;
 	object-fit: cover;
 }
-#item-2:checked ~ .cards #selector-1,
-#item-1:checked ~ .cards #selector-3,
-#item-3:checked ~ .cards #selector-2 {
+#item-2:checked ~ .Cards #selector-1,
+#item-1:checked ~ .Cards #selector-3,
+#item-3:checked ~ .Cards #selector-2 {
 	transform: translateX(-40%) scale(0.8);
 	opacity: 0.6;
 	z-index: 0;
 }
-#item-3:checked ~ .cards #selector-1,
-#item-1:checked ~ .cards #selector-2,
-#item-2:checked ~ .cards #selector-3 {
+#item-3:checked ~ .Cards #selector-1,
+#item-1:checked ~ .Cards #selector-2,
+#item-2:checked ~ .Cards #selector-3 {
 	transform: translateX(40%) scale(0.8);
 	opacity: 0.6;
 	z-index: 0;
 }
-#item-1:checked ~ .cards #selector-1,
-#item-2:checked ~ .cards #selector-2,
-#item-3:checked ~ .cards #selector-3 {
+#item-1:checked ~ .Cards #selector-1,
+#item-2:checked ~ .Cards #selector-2,
+#item-3:checked ~ .Cards #selector-3 {
 	transform: translateX(0) scale(1);
 	z-index: 1;
 }
 /*************************************************/
 /*Servicios*/
-.Services .Heading {
+.Services .Title {
 	width: 100%;
 	max-width: 1000px;
 	height: 100%;
@@ -896,7 +900,7 @@ img {
 	box-shadow: var(--box-shadow);
 	border-radius: 12px;
 	padding: 40px 40px 40px 40px;
-	transition: all .4s;
+	transition: .5s;
 	cursor: pointer;
 }
 .row i {
@@ -927,7 +931,7 @@ img {
 }
 /*************************************************/
 /*Sub Servicios*/
-.Sub-Services .Heading {
+.Sub-Services .Title {
 	width: 100%;
 	max-width: 1000px;
 	height: 100%;
@@ -935,21 +939,21 @@ img {
 }
 .Sub-Services__content {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 2rem;
 	align-items: center;
 	text-align: center;
 	font-weight: bold;
 }
-.sub-box {
+.Sub__box {
 	background-color: var(--background-secondary-color);
 	border-radius: 12px;
 	box-shadow: var(--box-shadow);
 	padding: 45px 45px 45px 45px;
-	transition: ease 0.5s;
+	transition: .5s;
 	cursor: pointer;
 }
-.sub-img img {
+.Sub__img img {
 	background-color: var(--primary-color);
 	max-width: 100%;
 	width: 60px;
@@ -957,19 +961,19 @@ img {
 	margin-bottom: 20px;
 	box-shadow: var(--box-shadow);
 }
-.sub-box h3 {
+.Sub__box h3 {
 	color: var(--primary-color);
 	margin-bottom: 20px;
 	font-size: 20px;
 	font-weight: bold;
 }
-.sub-box p {
+.Sub__box p {
 	font-size: 15px;
 	color: var(--text-color);
 	line-height: 29px;
 	font-weight: bold;
 }
-.sub-box:hover {
+.Sub__box:hover {
 	background-color: var(--background-secondary-color);
 	box-shadow: var(--box-shadow);
 	border-radius: 12px;
@@ -982,13 +986,13 @@ img {
 }
 /*************************************************/
 /*Blogs*/
-.Blogs .Heading {
+.Blogs .Title {
 	width: 100%;
 	max-width: 1000px;
 	height: 100%;
 	max-height: 50px;
 }
-.blog__content {
+.Blog__content {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 2.2rem;
@@ -996,19 +1000,19 @@ img {
 	text-align: center;
 	font-weight: bold;
 }
-.blog {
+.Blog {
 	position: relative;
 	background-color: var(--background-secondary-color);
 	border-radius: 5px;
 	box-shadow: var(--box-shadow);
-	transition: ease .4s;
+	transition: .5s;
 }
-.blog:hover {
+.Blog:hover {
 	box-shadow: var(--box-shadow);
 	transform: translateY(-5px);
-	transition: ease .4s;
+	transition: .5s;
 }
-.blog img {
+.Blog img {
 	width: 100%;
 	height: 300px;
 	object-fit: cover;
@@ -1016,39 +1020,39 @@ img {
 	border-top-right-radius: 5px;
 	filter: grayscale(100%);
 }
-.blog__content .blog:hover img {
+.Blog__content .Blog:hover img {
 	filter: grayscale(0);
 	transform: scale(1.1);
 	box-shadow: var(--box-shadow);
-	transition: ease .4s;
+	transition: .5s;
 }
-.blog .blog__text {
+.Blog .Blog__text {
 	margin-top: -7px;
 	padding: 1.1rem;
 	border-top: 8px solid var(--primary-color);
 }
-.blog .blog__text h4 {
+.Blog .Blog__text h4 {
 	font-size: 20px;
 	margin-bottom: 0.7rem;
 	font-weight: bold;
 	cursor: pointer;
 }
-.blog .blog__text h4:hover {
+.Blog .Blog__text h4:hover {
 	color: var(--primary-color);
 }
-.blog .blog__text p {
+.Blog .Blog__text p {
 	color: var(--text-color);
 	font-size: 15px;
 	line-height: 2rem;
 	font-weight: bold;
 	padding-bottom: 1rem;
 }
-.blog .blog__text p:hover {
+.Blog .Blog__text p:hover {
 	color: var(--primary-color);
 }
 /*************************************************/
 /*Skills*/
-.Skills .Heading {
+.Skills .Title {
 	width: 100%;
 	max-width: 1000px;
 	height: 100%;
@@ -1064,22 +1068,27 @@ img {
 	font-size: 15px;
 	text-transform: uppercase;
 }
-.progress__bar {
+.Progress__bar {
+	top: 0;
+    left: 0;
 	font-weight: bold;
 	background-color: var(--text-color);
-	width: 670px;
-	height: 10px;
+	width: 100%;
+	height: 100%;
 	margin-left: 15px;
 	border-radius: 5px;
 	box-shadow: var(--box-shadow);
 }
-.progress__bar div {
+.Progress__bar div {
 	height: 10px;
 	border-radius: 5px;
 	width: 0%;
 	background-color: var(--primary-color);
 }
-.progress__bar span {
+.Progress__bar span {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	height: 40px;
 	width: 40px;
 	border-radius: 50%;
@@ -1088,9 +1097,7 @@ img {
 	margin-top: -15px;
 	margin-right: -20px;
 	color: var(--text-color);
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	transition: .4s;
 }
 .html {
 	width: 90%;
@@ -1178,7 +1185,7 @@ img {
 }
 /*************************************************/
 /*Linea de tiempo*/
-.Timeline .Heading {
+.Timeline .Title {
 	width: 100%;
 	max-width: 1000px;
 	height: 100%;
@@ -1216,7 +1223,6 @@ img {
 .Timeline__item .Timeline__icon:hover i {
 	background-color: var(--primary-color);
 	color: var(--background-color);
-
 }
 .Timeline__item .Timeline__duration {
 	display: inline-block;
@@ -1236,7 +1242,7 @@ img {
 	border-radius: 20px;
 	border: 2px solid transparent;
 	text-transform: uppercase;
-	transition: all .4s;
+	transition: .5s;
 	box-shadow: var(--box-shadow);
 }
 .Timeline__duration:hover{
@@ -1261,7 +1267,9 @@ img {
 	color: var(--text-color);
 	font-weight: bold;
 }
-.circle {
+.Circle {
+	display: grid;
+	place-items: center;
 	position: absolute;
 	width: 20px;
 	height: 20px;
@@ -1269,20 +1277,18 @@ img {
 	background-color: var(--primary-color);
 	top: 105px;
 	left: 16px;
-	display: grid;
-	place-items: center;
 }
-.circle::after {
+.Circle::after {
 	content: ' ';
 	width: 12px;
 	height: 12px;
 	background-color: var(--text-color);
 	border-radius: 50%;
 }
-.circle:hover::after {
+.Circle:hover::after {
 	background-color: var(--background-color);
 }
-.button {
+.Button__timeline {
 	display: inline-block;
 	font-size: 14px;
 	font-weight: bold;
@@ -1291,10 +1297,10 @@ img {
 	border-radius: 12px;
 	border: 2px solid transparent;
 	text-transform: uppercase;
-	transition: ease .4s;
+	transition: .5s;
 	box-shadow: var(--box-shadow);
 }
-.button:hover{
+.Button__timeline:hover{
 	transform: translateX(10px);
 	background-color: transparent;
 	color: var(--primary-color);
@@ -1303,13 +1309,13 @@ img {
 }
 /*************************************************/
 /*Social*/
-.Contact .Heading {
+.Contact .Title {
 	width: 100%;
 	max-width: 1000px;
 	height: 100%;
 	max-height: 50px;
 }
-.social a {
+.Social a {
 	width: 35px;
 	height: 35px;
 	border-radius: 50%;
@@ -1323,16 +1329,16 @@ img {
 	margin-right: 22px;
 	margin-bottom: 30px;
 }
-.social a:hover {
+.Social a:hover {
 	background-color: var(--background-color);
 	border: 2px solid var(--text-color);
 }
-.social a:hover i {
+.Social a:hover i {
 	color: var(--text-color);
 }
 /*************************************************/
 /*Contactos*/
-.contacts__content {
+.Contacts__content {
 	background-color: var(--primary-color);
 	width: 100%;
 	margin: 10px auto;
@@ -1365,7 +1371,7 @@ input::placeholder {
 }
 /*************************************************/
 /*Correo electronico*/
-.contacts__content .action form input[type="email"] {
+.Contacts__content .action form input[type="email"] {
 	max-width: 100%;
 	width: 470px;
 	padding: 12px 15px;
@@ -1380,7 +1386,7 @@ input::placeholder {
 }
 /*************************************************/
 /*Enviar*/
-.contacts__content .action form input[type="submit"] {
+.Contacts__content .action form input[type="submit"] {
 	padding: 12px 40px;
 	background-color: var(--background-color);
 	box-shadow: var(--box-shadow);
@@ -1390,20 +1396,20 @@ input::placeholder {
 	cursor: pointer;
 	border: none;
 	outline: none;
-	transition: ease .4s;
+	transition: .5s;
 	text-transform: uppercase;
 }
-.contacts__content .action form input[type="submit"]:hover {
+.Contacts__content .action form input[type="submit"]:hover {
 	transform: scale(1.1);
 	background-color: var(--background-color);
 	color: var(--text-color);
 	font-weight: bold;
 	cursor: pointer;
-	transition: ease .4s;
+	transition: .5s;
 }
 /*************************************************/
 /*Pie de pagina*/
-.Footer .Heading {
+.Footer .Title {
 	width: 100%;
 	max-width: 1000px;
 	height: 100%;
@@ -1429,7 +1435,7 @@ footer {
     -webkit-mask-size: cover;
     mask-size: cover;
 }
-.ends {
+.Ends {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -1481,9 +1487,9 @@ footer {
 }
 /*************************************************/
 /*----------Mediaqueries----------*/
-@media (max-width: 1425px) {
+@media screen and (max-width: 1425px) {
 	.Container-flex-media {
-		padding: 1rem 2rem;
+		padding: 7rem 11rem;
 	}
 	.Header {
 		padding: 18px 3%;
@@ -1500,7 +1506,7 @@ footer {
 		font-size: 1.2rem;
 	}
 	#menu-icon{
-		display: initial;
+		display: block;
 	}
 	h2 span {
 		font-size: 4rem;
@@ -1518,13 +1524,13 @@ footer {
 	.Sign__up {
 		display: none;
 	}
-	.others__portfolios__content {
+	.Others__portfolios__content {
 		grid-template-columns: repeat(2, 1fr);
 	}
-	.blog__content {
+	.Blog__content {
 		grid-template-columns: repeat(2, 1fr);
 	}
-	.contacts__content {
+	.Contacts__content {
 		width: 95%;
 		transition: .2s;
 	}
@@ -1545,7 +1551,7 @@ footer {
 }
 /*************************************************/
 /*----------Mediaqueries----------*/
-@media (max-width: 990px) {
+@media screen and (max-width: 990px) {
 	.Container-flex-media {
 		padding: 1rem 1rem;
 	}
@@ -1553,7 +1559,7 @@ footer {
 		margin-right: -50%;
 	}
 	#menu-icon {
-		display: block;
+		display: initial;
 	}
 	.Home {
 		min-height: 80vh;
@@ -1595,7 +1601,7 @@ footer {
 	.Header {
 		grid-template-columns: repeat(1, 1fr);
 	}
-	.box img {
+	.Box img {
 		max-width: 100%;
 		width: 760px;
 		height: auto;
@@ -1631,22 +1637,27 @@ footer {
 	.About__up p {
 		font-size: 1.4rem;
 	}
-	.blog__content {
+	.Blog__content {
 		grid-template-columns: repeat(1, 1fr);
 	}
 	.Portfolio__content {
 		grid-template-columns: repeat(auto-fit, minmax(300px, auto));
 	}
-	.others__portfolios__content {
+	.Others__portfolios__content {
 		grid-template-columns: repeat(1, 1fr);
 	}
 	.Skills {
-		grid-template-columns: 1fr;
+		grid-template-columns: repeat(1, 1fr);
 	}
-	.Skills__content .progress__bar {
-		grid-template-columns: 1fr;
+	.Progress__bar {
+		grid-template-columns: repeat(1, 1fr);
 	}
 	.Timeline {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.Circle {
+		top: 130px;
+		left: 16px;
 		grid-template-columns: repeat(1, 1fr);
 	}
 	:root {
@@ -1657,8 +1668,9 @@ footer {
 }
 /*************************************************/
 /*----------Mediaqueries----------*/
-@media (max-width: 540px) {
-	.contacts__content .action form input[type="email"] {
+@media screen and (max-width: 540px) {
+	.Contacts__content .action form input[type="email"] {
 		width: 310px;
 	}
+
 }
