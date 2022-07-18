@@ -1527,6 +1527,14 @@ footer {
 	.Sign__up {
 		display: none;
 	}
+	.Sign__in {
+		position: fixed;
+		top: 20px;
+		left: 10;
+		right: 10px;
+		bottom: 10;
+		margin: auto;
+	}
 	.Others__portfolios__content {
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -1565,6 +1573,17 @@ footer {
 	.Home {
 		min-height: 80vh;
 	}
+	.Button__content__up {
+		display: block;
+	}
+	.Sign__in {
+		position: fixed;
+		top: 15px;
+		left: 10;
+		right: 10px;
+		bottom: 10;
+		margin: auto;
+	}
 	.Navbar {
 		position: absolute;
 		top: -600px;
@@ -1573,7 +1592,7 @@ footer {
 		flex-direction: column;
 		background-color: var(--background-secondary-color);
 		text-align: left;
-		transition: all .35s ease;
+		transition: .35s;
 	}
 	.Navbar li a {
 		position: relative;
