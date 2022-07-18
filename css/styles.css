@@ -48,14 +48,14 @@ body {
 /*************************************************/
 /*Cabeza*/
 .Header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	position: fixed;
 	width: 100%;
 	top: 0;
 	right: 0;
 	z-index: 1000;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	background-color: var(--background-secondary-color);
 	padding: 15px 6%;
 }
@@ -135,7 +135,10 @@ body {
 /*************************************************/
 /*Barra de navegación padre*/
 .Nav {
+	width: 100%;
 	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	padding-top: -9%;
 	padding-left: 10%;
 	padding-right: 10%;
@@ -1555,11 +1558,9 @@ footer {
 	.Container-flex-media {
 		padding: 1rem 1rem;
 	}
-	.Logo {
-		margin-right: -50%;
-	}
 	#menu-icon {
 		display: initial;
+		margin-right: 25%;
 	}
 	.Home {
 		min-height: 80vh;
