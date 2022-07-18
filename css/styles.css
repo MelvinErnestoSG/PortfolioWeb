@@ -145,11 +145,11 @@ body {
 }
 .Nav ul li {
 	display: inline-block;
+	/*list-style: none*/
+	/*list-style-type: none;*/
 }
 .Nav ul li a {
 	color: var(--text-color);
-	/*list-style-type: none;*/
-	/*list-style: none*/
 	/*text-decoration: none;*/
 	text-transform: capitalize;
 	font-weight: bold;
@@ -184,18 +184,17 @@ body {
 	width: 80%;
 }
 /*************************************************/
-/*Boton*/
+/*Botones*/
 .Button__content__up a {
-	color: var(--text-color);
+	background-color: var(--primary-color);
 	font-weight: bold;
 	padding: 8px 24px;
 	text-transform: capitalize;
-	border: 2px solid transparent;
 	transition: .5s;
 }
+/*************************************************/
+/*Boton 1*/
 .Button__content__up .Sign__up {
-	color: var(--text-color);
-	background-color: var(--primary-color);
 	border-radius: 30px;
 }
 .Button__content__up .Sign__up:hover {
@@ -203,9 +202,9 @@ body {
 	border: 2px solid var(--primary-color);
 	color: var(--primary-color);
 }
-.Button__content__up .Sign__in{
-	color: var(--text-color);
-	background-color: var(--primary-color);
+/*************************************************/
+/*Boton 2*/
+.Button__content__up .Sign__in {
 	border-radius: 30px;
 }
 .Button__content__up .Sign__in:hover {
@@ -240,7 +239,7 @@ span {
 .Home__content h4{
 	color: var(--text-color);
 	font-size: 15px;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 }
 /*************************************************/
 /*media cover*/
@@ -398,11 +397,11 @@ section {
 	font-weight: bold;
 }
 .About__up .About__item1 .Text {
+	position: relative;
 	color: var(--text-color);
 	font-size: 1.2rem;
 	padding-left: 3rem;
 	letter-spacing: 2px;
-	position: relative;
 	text-transform: uppercase;
 }
 .About__up .About__item1 .Text::before {
@@ -442,11 +441,11 @@ section {
 	font-weight: bold;
 }
 .About__up .About__item2 .Text {
+	position: relative;
 	color: var(--text-color);
 	font-size: 1.2rem;
 	padding-left: 3rem;
 	letter-spacing: 2px;
-	position: relative;
 	text-transform: uppercase;
 }
 .About__up .About__item2 .Text::before {
@@ -486,11 +485,11 @@ section {
 	font-weight: bold;
 }
 .About__up .About__item3 .Text {
+	position: relative;
 	color: var(--text-color);
 	font-size: 1.2rem;
 	padding-left: 3rem;
 	letter-spacing: 2px;
-	position: relative;
 	text-transform: uppercase;
 }
 .About__up .About__item3 .Text::before {
@@ -530,11 +529,11 @@ section {
 	font-weight: bold;
 }
 .About__up .About__item4 .Text {
+	position: relative;
 	color: var(--text-color);
 	font-size: 1.2rem;
 	padding-left: 3rem;
 	letter-spacing: 2px;
-	position: relative;
 	text-transform: uppercase;
 }
 .About__up .About__item4 .Text::before {
@@ -1492,7 +1491,10 @@ footer {
 /*----------Mediaqueries----------*/
 @media screen and (max-width: 1425px) {
 	.Container-flex-media {
-		padding: 7rem 11rem;
+		padding: 7rem 7rem;
+	}
+	#menu-icon{
+		display: block;
 	}
 	.Header {
 		padding: 18px 3%;
@@ -1508,21 +1510,29 @@ footer {
 	.Home__content {
 		font-size: 1.2rem;
 	}
-	#menu-icon{
-		display: block;
-	}
 	h2 span {
 		font-size: 4rem;
 	}
 	h2 {
 		font-size: 4.5rem;
 	}
-	.About__content {
-		grid-template-columns: repeat(2, 1fr);
+	.Media__cover {
+		display: inline-flex;
 	}
 	section {
 		padding: 140px 3%;
 		transition: .2s;
+	}
+	.About .About__content {
+		padding-right: 1rem;
+		grid-template-columns: 1fr;
+	}
+	.About__up {
+		grid-template-columns: repeat(2, 4fr);
+		text-align: center;
+	}
+	.About__up p {
+		font-size: 1.4rem;
 	}
 	.Sign__up {
 		display: none;
@@ -1592,7 +1602,10 @@ footer {
 		flex-direction: column;
 		background-color: var(--background-secondary-color);
 		text-align: left;
-		transition: .35s;
+		transition: .5s;
+	}
+	.Navbar i {
+		display: none;
 	}
 	.Navbar li a {
 		position: relative;
@@ -1615,9 +1628,6 @@ footer {
 	.Navbar.active {
 		top: 100%;
 	}
-	.About__content {
-		padding-right: 1rem;
-	}
 	.Header {
 		grid-template-columns: repeat(1, 1fr);
 	}
@@ -1638,16 +1648,14 @@ footer {
 		min-height: 70vh;
 	}
 	.Media__cover {
-		display: none;
+		display: flex;
 	}
 	section {
 		padding: 65px 3%;
 		transition: .2s;
 	}
-	.About {
-		grid-template-columns: 1fr;
-	}
-	.About__content {
+	.About .About__content {
+		padding-right: 1rem;
 		grid-template-columns: 1fr;
 	}
 	.About__up {
@@ -1692,5 +1700,4 @@ footer {
 	.Contacts__content .action form input[type="email"] {
 		width: 310px;
 	}
-
 }
