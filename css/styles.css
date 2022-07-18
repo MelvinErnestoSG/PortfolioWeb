@@ -106,7 +106,7 @@ body {
 }
 /*************************************************/
 /*Menu*/
-#menu-icon {
+#Menu-icon {
 	font-size: 27px;
 	color: var(--text-color);
 	z-index: 1001;
