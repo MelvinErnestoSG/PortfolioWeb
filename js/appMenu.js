@@ -4,7 +4,7 @@ window.addEventListener ("scroll", function() {
 	header.classList.toggle ("sticky", window.scrollY > 0);
 });
 
-let menu = document.querySelector('#menu-icon');
+let menu = document.querySelector('#Menu-icon');
 let navbar = document.querySelector('.Navbar');
 
 menu.onclick = () => {
