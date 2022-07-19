@@ -12,17 +12,19 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<script defer src="js/AppMenu.js"></script>
 	<script defer src="js/AppReveal.js"></script>
+	<script defer src="js/AppMenuLateral.js"></script>
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
 	<link rel="icon" href="img/logo.ico">
 	<title>Portfolio Website</title>
 </head>
-<body>
+<body class="Main__content">
 	<container class="Container-flex-media">
 		<!--------header-------->
 		<header class="Header">
 			<!--<a href="#" class="logo"><img src="img/logo.png"></a>-->
-			<div class="fa-solid fa-bars" id="Menu-icon"></div>
+			<div class="fa-solid fa-bars" id="menu-icon"></div>
 			
 			<nav class="Nav">
 				<a href="#" class="Logo">lo<span>go</span></a>
@@ -166,7 +168,7 @@
 		<!--------Portfolios-------->
 		<section class="Portfolios" id="Portfolios" title="Portfolios">
 			<div class="Title">
-				<h2>Port<span>foli</span>os</h2>
+				<h2>Port<span>foli</span>o</h2>
 			</div>
 			<div class="Portfolio__content">
 				<div class="Column">
@@ -382,7 +384,7 @@
 		</section>
 
 		<!--------service-------->
-		<section class="Services" id="Services" title="Servicess">
+		<section class="Services" id="Services" title="Services">
 			<div class="Title">
 				<h2>Serv<span>ices</span></h2>
 			</div>
@@ -430,11 +432,11 @@
 		</section>
 		
 		<!--------Sub Services-------->
-		<section class="Sub-Services" id="Sub-Services" title="Sub Services">
+		<section class="Sub__Services" id="Sub__Services" title="Sub Services">
 			<div class="Title">
 				<h2>S<span>u</span>b <span>Serv</span>ices</h2>
 			</div>
-			<div class="Sub-Services__content">
+			<div class="Sub__Services__content">
 				<div class="Sub__box">
 					<div class="Sub__img">
 						<img src="img/target.svg">
@@ -843,6 +845,44 @@
 				</marquee></pre>
 			</footer>
 		</section>
+
+		<div class="controls">
+			<div class="control active-btn" title="Works">
+				<a href="#Works">
+					<i class="fa-solid fa-laptop-file"></i>
+				</a>
+			</div>
+
+			<div class="control active-btn" title="Others Portfolios">
+				<a href="#Others__portfolios">
+					<i class="fas fa-briefcase"></i>
+				</a>
+			</div>
+
+			<div class="control active-btn" title="Slider 3D">
+				<a href="#Slider3D">
+					<i class="fa-solid fa-camera"></i>
+				</a>
+			</div>
+
+			<div class="control active-btn" title="Sub Services">
+				<a href="#Sub__Services">
+					<i class="fas fa-certificate"></i>
+				</a>
+			</div>
+
+			<div class="control active-btn" title="Skills">
+				<a href="#Skills">
+					<i class="far fa-newspaper"></i>
+				</a>
+			</div>
+
+			<div class="control active-btn" title="Timeline">
+				<a href="#Timeline">
+					<i class="fas fa-timeline"></i>
+				</a>
+			</div>
+		</div>
 	</container>
 	<!--------js-------->
 	<script src="https://unpkg.com/scrollreveal"></script>

@@ -14,10 +14,13 @@
 	--background-color: green;
 	--background-secondary-color: #baebcd;
 	--text-color: #000;
-	--box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.20), 0 6px 6px rgba(0, 0, 0, 0.24);
+	--box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.24);
 	--big-font: 5.3rem;
 	--h2-font: 3.8rem;
 	--p-font: 1rem;
+}
+.Main__content {
+	height: 200vh;
 }
 /*************************************************/
 /*Cuerpo*/
@@ -64,7 +67,7 @@ body {
 	color: var(--primary-color);
 	padding: 12px 5%;
 	cursor: pointer;
-	transition: .5s;
+	transition: 0.5s;
 }
 /*************************************************/
 /*Trabajos*/
@@ -90,7 +93,7 @@ body {
 	border-radius: 10px;
 	margin-bottom: 20px;
 	box-shadow: var(--box-shadow);
-	transition: .5s;
+	transition: 0.5s;
 }
 .Box img:hover {
 	transform: scale(1.1);
@@ -106,7 +109,7 @@ body {
 }
 /*************************************************/
 /*Menu*/
-#Menu-icon {
+#menu-icon {
 	font-size: 27px;
 	color: var(--text-color);
 	z-index: 1001;
@@ -171,14 +174,14 @@ body {
 	color: var(--primary-color);
 }
 .Navbar a::after {
-	content: '';
+	content: "";
 	position: absolute;
 	width: 0;
 	height: 3px;
 	background-color: var(--primary-color);
 	bottom: -2px;
 	left: 0;
-	transition: .5s;
+	transition: 0.5s;
 }
 .Navbar a:hover::after {
 	width: 80%;
@@ -190,7 +193,7 @@ body {
 	font-weight: bold;
 	padding: 8px 24px;
 	text-transform: capitalize;
-	transition: .5s;
+	transition: 0.5s;
 }
 /*************************************************/
 /*Boton 1*/
@@ -224,7 +227,7 @@ body {
 	align-items: center;
 	background-size: cover;
 	background-position: center;
-    background-attachment: fixed;
+	background-attachment: fixed;
 }
 span {
 	color: var(--primary-color);
@@ -236,7 +239,7 @@ span {
 .Home__content h3 {
 	font-size: 20px;
 }
-.Home__content h4{
+.Home__content h4 {
 	color: var(--text-color);
 	font-size: 15px;
 	letter-spacing: 1px;
@@ -377,7 +380,7 @@ section {
 	box-shadow: var(--box-shadow);
 	border-radius: 5px;
 	font-weight: bold;
-	transition: .5s;
+	transition: 0.5s;
 }
 .About__up .About__item1:hover {
 	border: 2px solid var(--primary-color);
@@ -421,7 +424,7 @@ section {
 	box-shadow: var(--box-shadow);
 	border-radius: 5px;
 	font-weight: bold;
-	transition: .5s;
+	transition: 0.5s;
 }
 .About__up .About__item2:hover {
 	border: 2px solid var(--primary-color);
@@ -465,7 +468,7 @@ section {
 	box-shadow: var(--box-shadow);
 	border-radius: 5px;
 	font-weight: bold;
-	transition: .5s;
+	transition: 0.5s;
 }
 .About__up .About__item3:hover {
 	border: 2px solid var(--primary-color);
@@ -509,7 +512,7 @@ section {
 	box-shadow: var(--box-shadow);
 	border-radius: 5px;
 	font-weight: bold;
-	transition: .5s;
+	transition: 0.5s;
 }
 .About__up .About__item4:hover {
 	border: 2px solid var(--primary-color);
@@ -586,18 +589,18 @@ section {
 	color: var(--text-color);
 	transform: translateX(100%);
 	z-index: -1;
-	transition: .5s;
+	transition: 0.5s;
 }
 .Button__content__down:hover {
 	color: var(--text-color);
-	transition: .5s;
+	transition: 0.5s;
 }
 .Button__content__down:hover::before {
 	width: 100%;
 	height: 100%;
 	background-color: var(--primary-color);
 	transform: translateX(0);
-	transition: .5s;
+	transition: 0.5s;
 }
 .Botton_text {
 	color: var(--text-color);
@@ -656,7 +659,7 @@ section {
 	top: 0;
 	left: 0;
 	border-radius: 12px;
-	transition: .5s;
+	transition: 0.5s;
 }
 .Layer:hover {
 	background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, #191919);
@@ -671,7 +674,7 @@ section {
 	left: 50%;
 	transform: translateX(-50%);
 	opacity: 0;
-	transition: .5s;
+	transition: 0.5s;
 }
 .Layer:hover h3 {
 	bottom: 52%;
@@ -688,7 +691,7 @@ section {
 	left: 50%;
 	transform: translateX(-50%);
 	opacity: 0;
-	transition: .5s;
+	transition: 0.5s;
 }
 .Layer:hover h5 {
 	bottom: 48%;
@@ -739,7 +742,7 @@ a {
 	flex-direction: column;
 	opacity: 0;
 	transform: scale(0%);
-	transition: .5s;
+	transition: 0.5s;
 }
 .Portfolio__item__content .Hover__items h3 {
 	font-size: 1.5rem;
@@ -761,7 +764,7 @@ a {
 	justify-content: center;
 	margin: 0 1rem;
 	cursor: pointer;
-	transition: .5s;
+	transition: 0.5s;
 }
 .Portfolio__item__content .Hover__items .Icons .icon i {
 	font-size: 1.5rem;
@@ -902,7 +905,7 @@ img {
 	box-shadow: var(--box-shadow);
 	border-radius: 12px;
 	padding: 40px 40px 40px 40px;
-	transition: .5s;
+	transition: 0.5s;
 	cursor: pointer;
 }
 .row i {
@@ -925,21 +928,18 @@ img {
 .row:hover {
 	will-change: transform;
 	box-shadow: var(--box-shadow);
-	transform: 
-	perspective(1000px) 
-	rotateX(4.8deg) 
-	rotateY(10.23deg)
-	scale3d(1.05, 1.05, 1.05);
+	transform: perspective(1000px) rotateX(4.8deg) rotateY(10.23deg)
+		scale3d(1.05, 1.05, 1.05);
 }
 /*************************************************/
 /*Sub Servicios*/
-.Sub-Services .Title {
+.Sub__Services .Title {
 	width: 100%;
 	max-width: 1000px;
 	height: 100%;
 	max-height: 50px;
 }
-.Sub-Services__content {
+.Sub__Services__content {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 2rem;
@@ -952,7 +952,7 @@ img {
 	border-radius: 12px;
 	box-shadow: var(--box-shadow);
 	padding: 45px 45px 45px 45px;
-	transition: .5s;
+	transition: 0.5s;
 	cursor: pointer;
 }
 .Sub__img img {
@@ -980,11 +980,8 @@ img {
 	box-shadow: var(--box-shadow);
 	border-radius: 12px;
 	will-change: transform;
-	transform: 
-	perspective(1000px) 
-	rotateX(4.8deg) 
-	rotateY(10.23deg)
-	scale3d(1.05, 1.05, 1.05);
+	transform: perspective(1000px) rotateX(4.8deg) rotateY(10.23deg)
+		scale3d(1.05, 1.05, 1.05);
 }
 /*************************************************/
 /*Blogs*/
@@ -1007,12 +1004,12 @@ img {
 	background-color: var(--background-secondary-color);
 	border-radius: 5px;
 	box-shadow: var(--box-shadow);
-	transition: .5s;
+	transition: 0.5s;
 }
 .Blog:hover {
 	box-shadow: var(--box-shadow);
 	transform: translateY(-5px);
-	transition: .5s;
+	transition: 0.5s;
 }
 .Blog img {
 	width: 100%;
@@ -1026,7 +1023,7 @@ img {
 	filter: grayscale(0);
 	transform: scale(1.1);
 	box-shadow: var(--box-shadow);
-	transition: .5s;
+	transition: 0.5s;
 }
 .Blog .Blog__text {
 	margin-top: -7px;
@@ -1072,7 +1069,7 @@ img {
 }
 .Progress__bar {
 	top: 0;
-    left: 0;
+	left: 0;
 	font-weight: bold;
 	background-color: var(--text-color);
 	width: 100%;
@@ -1099,7 +1096,7 @@ img {
 	margin-top: -15px;
 	margin-right: -20px;
 	color: var(--text-color);
-	transition: .4s;
+	transition: 0.4s;
 }
 .html {
 	width: 90%;
@@ -1244,10 +1241,10 @@ img {
 	border-radius: 20px;
 	border: 2px solid transparent;
 	text-transform: uppercase;
-	transition: .5s;
+	transition: 0.5s;
 	box-shadow: var(--box-shadow);
 }
-.Timeline__duration:hover{
+.Timeline__duration:hover {
 	transform: translateX(10px);
 	background-color: transparent;
 	color: var(--primary-color);
@@ -1281,7 +1278,7 @@ img {
 	left: 16px;
 }
 .Circle::after {
-	content: ' ';
+	content: " ";
 	width: 12px;
 	height: 12px;
 	background-color: var(--text-color);
@@ -1299,10 +1296,10 @@ img {
 	border-radius: 12px;
 	border: 2px solid transparent;
 	text-transform: uppercase;
-	transition: .5s;
+	transition: 0.5s;
 	box-shadow: var(--box-shadow);
 }
-.Button__timeline:hover{
+.Button__timeline:hover {
 	transform: translateX(10px);
 	background-color: transparent;
 	color: var(--primary-color);
@@ -1398,7 +1395,7 @@ input::placeholder {
 	cursor: pointer;
 	border: none;
 	outline: none;
-	transition: .5s;
+	transition: 0.5s;
 	text-transform: uppercase;
 }
 .Contacts__content .action form input[type="submit"]:hover {
@@ -1407,7 +1404,7 @@ input::placeholder {
 	color: var(--text-color);
 	font-weight: bold;
 	cursor: pointer;
-	transition: .5s;
+	transition: 0.5s;
 }
 /*************************************************/
 /*Pie de pagina*/
@@ -1432,10 +1429,10 @@ footer {
 	background-image: url(../img/background-footer.svg);
 	*background-size: cover;
 	background-color: var(--primary-color);
-    -webkit-mask-image: url("../img/background-footer.svg");
-    mask-image: url("../img/");
-    -webkit-mask-size: cover;
-    mask-size: cover;
+	-webkit-mask-image: url("../img/background-footer.svg");
+	mask-image: url("../img/");
+	-webkit-mask-size: cover;
+	mask-size: cover;
 }
 .Ends {
 	display: flex;
@@ -1488,21 +1485,58 @@ footer {
 	box-shadow: var(--box-shadow);
 }
 /*************************************************/
+/*Menu lateral*/
+.controls {
+	position: fixed;
+	z-index: 10;
+	top: 50%;
+	right: 3%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transform: translateY(-50%);
+}
+.controls .control {
+	padding: 1rem;
+	cursor: pointer;
+	background-color: var(--background-secondary-color);
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0.7rem 0;
+	box-shadow: var(--box-shadow);
+}
+.controls .control i {
+	font-size: 1.2rem;
+	pointer-events: none;
+}
+.controls .active-btn {
+	background-color: var(--background-secondary-color);
+	transition: 0.4s;
+}
+.controls .active-btn i {
+	color: var(--text-black);
+}
+/*************************************************/
 /*----------Mediaqueries----------*/
 @media screen and (max-width: 1425px) {
 	.Container-flex-media {
 		padding: 7rem 7rem;
 	}
-	#menu-icon{
+	#menu-icon {
 		display: block;
 	}
 	.Header {
 		padding: 18px 3%;
-		transition: .2s;
+		transition: 0.2s;
 	}
 	.Header.sticky {
 		padding: 10px 3%;
-		transition: .2s;
+		transition: 0.2s;
 	}
 	.Home {
 		height: 80vh;
@@ -1521,7 +1555,7 @@ footer {
 	}
 	section {
 		padding: 140px 3%;
-		transition: .2s;
+		transition: 0.2s;
 	}
 	.About .About__content {
 		padding-right: 1rem;
@@ -1553,7 +1587,7 @@ footer {
 	}
 	.Contacts__content {
 		width: 95%;
-		transition: .2s;
+		transition: 0.2s;
 	}
 	.Footer__content h2 {
 		font-size: x-large;
@@ -1567,7 +1601,7 @@ footer {
 		--big-font: 4rem;
 		--h2-font: 2.3rem;
 		--p-font: 1rem;
-		transition: .2s;
+		transition: 0.2s;
 	}
 }
 /*************************************************/
@@ -1602,7 +1636,7 @@ footer {
 		flex-direction: column;
 		background-color: var(--background-secondary-color);
 		text-align: left;
-		transition: .5s;
+		transition: 0.5s;
 	}
 	.Navbar i {
 		display: none;
@@ -1652,7 +1686,7 @@ footer {
 	}
 	section {
 		padding: 65px 3%;
-		transition: .2s;
+		transition: 0.2s;
 	}
 	.About .About__content {
 		padding-right: 1rem;
@@ -1691,7 +1725,7 @@ footer {
 	:root {
 		--big-font: 3.4rem;
 		--h2-font: 2rem;
-		transition: .2s;
+		transition: 0.2s;
 	}
 }
 /*************************************************/
